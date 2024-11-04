@@ -6,6 +6,7 @@ import MainLayout from "../layouts/MainLayout";
 
 // Lazy Loaded Pages
 const Home = lazy(() => import("pages/Home"));
+const FAQ = lazy(() => import("pages/FAQ"));
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <Home />,
+      },
+      {
+        path: "/faq",
+        element: <FAQ />,
       },
     ],
   },
