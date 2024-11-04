@@ -25,7 +25,12 @@ const Button = ({
                     ? "bg-brand_secondary text-white"
                     : ""
                 }
-        px-[16px] whitespace-nowrap flex justify-center items-center transition ease-in-out duration-500 text-white rounded-[5px] h-[50px] w-fit  ${className}`}
+                ${
+                  theme === "transparent" && !disabled
+                    ? "border bg-[#f2f4f700] text-white"
+                    : ""
+                }
+        px-[16px] whitespace-nowrap flex justify-center items-center transition ease-in-out duration-500 text-white rounded-[5px] h-[45px] w-fit  ${className}`}
     >
       {loading ? (
         <svg
