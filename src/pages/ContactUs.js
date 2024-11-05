@@ -25,7 +25,7 @@ const ContactUs = () => {
   return (
     <div className="bg-gradient-to-b from-[#FFEDED] to-[#FFFFFF] pb-[5rem]">
       <div className="max-w-[1350px] m-auto pt-[13rem] px-[4rem] flex justify-between">
-        <div className="basis-[35%]">
+        <div className="basis-[35%] pt-[2rem]">
           <h1 className="font-qanelas_b text-[56px] leading-[69px] text-[#0D0E13] mb-[2rem]">
             Get in touch
           </h1>

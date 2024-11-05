@@ -1,17 +1,16 @@
 import React from "react";
-// import { ReactComponent as Check } from "assets/icons/check-box-selected.svg";
 import { ReactComponent as Uncheck } from "assets/icons/check-box-unselected.svg";
+import { ReactComponent as Check } from "assets/icons/check-box-selected.svg";
 
 export default function Checkbox({ status, label, onClick, className }) {
   return (
     <div className={`flex ${className}`}>
       {status ? (
-        // <Check
-        //   data-testid="checked"
-        //   onClick={onClick}
-        //   className="cursor-pointer hide_tap"
-        // />
-        <p>Checked</p>
+        <Check
+          data-testid="checked"
+          onClick={onClick}
+          className="cursor-pointer hide_tap"
+        />
       ) : (
         <Uncheck
           data-testid="unchecked"
