@@ -40,7 +40,8 @@ const Header = () => {
   const lightTheme =
     pathname.toLowerCase().includes("faq") ||
     pathname.toLowerCase().includes("contact-us") ||
-    pathname.toLowerCase().includes("solutions");
+    pathname.toLowerCase().includes("solutions") ||
+    pathname.toLowerCase().includes("privacy-policy");
 
   return (
     <div className="absolute w-full py-[20px]">

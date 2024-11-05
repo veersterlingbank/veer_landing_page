@@ -10,6 +10,7 @@ const FAQ = lazy(() => import("pages/FAQ"));
 const ContactUs = lazy(() => import("pages/ContactUs"));
 const AboutUs = lazy(() => import("pages/AboutUs"));
 const Solutions = lazy(() => import("pages/Solutions"));
+const PrivacyPolicy = lazy(() => import("pages/PrivacyPolicy"));
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/solutions",
         element: <Solutions />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
       },
     ],
   },

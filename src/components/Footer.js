@@ -1,8 +1,10 @@
 import FooterTopBG from "assets/images/footer-top-bg.webp";
 import FooterBG from "assets/images/fulll-vector-logo.webp";
 import Button from "./Inputs/Button";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   const menu = [
     {
       name: "Veer solutions",
@@ -92,7 +94,7 @@ const Footer = () => {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           borderRadius: "0 0 100px 0",
-          paddingLeft: '6rem',
+          paddingLeft: "6rem",
         }}
       >
         <div className="max-w-[1350px] m-auto flex justify-between p-[3rem]">
@@ -115,7 +117,13 @@ const Footer = () => {
         <div className="basis-[17%]">
           <h6 className="text-[#94A3B8] text-[14px] mb-[15px]">MENU</h6>
           {menu.map((item, index) => (
-            <p key={index} className="text-[14px] mb-[15px] cursor-pointer">
+            <p
+              key={index}
+              className="text-[14px] mb-[15px] cursor-pointer"
+              onClick={() => {
+                navigate(item.link);
+              }}
+            >
               {item.name}
             </p>
           ))}
@@ -123,7 +131,13 @@ const Footer = () => {
         <div className="basis-[20%]">
           <h6 className="text-[#94A3B8] text-[14px] mb-[15px]">ENTERPRISE</h6>
           {enterprise.map((item, index) => (
-            <p key={index} className="text-[14px] mb-[15px] cursor-pointer">
+            <p
+              key={index}
+              className="text-[14px] mb-[15px] cursor-pointer"
+              onClick={() => {
+                navigate(item.link);
+              }}
+            >
               {item.name}
             </p>
           ))}
@@ -131,7 +145,13 @@ const Footer = () => {
         <div className="basis-[20%]">
           <h6 className="text-[#94A3B8] text-[14px] mb-[15px]">LEGAL</h6>
           {legal.map((item, index) => (
-            <p key={index} className="text-[14px] mb-[15px] cursor-pointer">
+            <p
+              key={index}
+              className="text-[14px] mb-[15px] cursor-pointer"
+              onClick={() => {
+                navigate(item.link);
+              }}
+            >
               {item.name}
             </p>
           ))}
