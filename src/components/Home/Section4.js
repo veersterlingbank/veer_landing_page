@@ -20,12 +20,12 @@ const Section4 = () => {
             </p>
           </div>
           <div className="">
-            <img src={ImageA} alt="" />
+            <img src={ImageA} alt="A person using the driving simulator" />
           </div>
         </div>
         <div className="flex gap-[10%] pt-[7rem]">
           <div className="">
-            <img src={ImageB} alt="" />
+            <img src={ImageB} alt="Veer staffs tracking and analyzing driver's behaviour in real time" />
           </div>
           <div className="basis-[40%]">
             <h3 className="font-qanelas_b text-[36px] leading-[44px] mt-[4rem] mb-[1.5rem]">
@@ -54,7 +54,7 @@ const Section4 = () => {
             </p>
           </div>
           <div className="">
-            <img src={ImageC} alt="" />
+            <img src={ImageC} alt="A person using the Veer dashboard" />
           </div>
         </div>
       </div>
