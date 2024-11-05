@@ -9,6 +9,7 @@ const Home = lazy(() => import("pages/Home"));
 const FAQ = lazy(() => import("pages/FAQ"));
 const ContactUs = lazy(() => import("pages/ContactUs"));
 const AboutUs = lazy(() => import("pages/AboutUs"));
+const Solutions = lazy(() => import("pages/Solutions"));
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <AboutUs />,
+      },
+      {
+        path: "/solutions",
+        element: <Solutions />,
       },
     ],
   },

@@ -88,7 +88,7 @@ const Section2 = () => {
                     <div>{item.icon}</div>
                     <div>
                       <h5 className="font-qanelas_b text-[24px] text-[#222222] mb-[1rem]">
-                        {item.title} {index}
+                        {item.title}
                       </h5>
                       <p className="text-[#191C24] font-qanelas_m">
                         {item.content1}

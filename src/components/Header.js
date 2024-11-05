@@ -39,7 +39,9 @@ const Header = () => {
 
   const lightTheme =
     pathname.toLowerCase().includes("faq") ||
-    pathname.toLowerCase().includes("contact-us");
+    pathname.toLowerCase().includes("contact-us") ||
+    pathname.toLowerCase().includes("solutions");
+
   return (
     <div className="absolute w-full py-[20px]">
       <div
@@ -63,8 +65,9 @@ const Header = () => {
           />
         )}
         <div className="flex items-center gap-10">
-          {menuOptions.map((item) => (
+          {menuOptions.map((item, index) => (
             <p
+              key={index}
               className={`cursor-pointer font-qanelas_m text-14 pb-[5px]] ${
                 lightTheme ? "text-black" : ""
               } ${
