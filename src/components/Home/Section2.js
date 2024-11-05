@@ -3,7 +3,7 @@ import { ReactComponent as Service1 } from "assets/icons/services-icon-1.svg";
 import { ReactComponent as Service2 } from "assets/icons/services-icon-2.svg";
 import { ReactComponent as Service3 } from "assets/icons/services-icon-3.svg";
 import { ReactComponent as Service4 } from "assets/icons/services-icon-4.svg";
-import Button from "components/Button";
+import Button from "components/Inputs/Button";
 
 const Section2 = () => {
   const services = [

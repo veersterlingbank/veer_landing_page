@@ -7,6 +7,7 @@ import MainLayout from "../layouts/MainLayout";
 // Lazy Loaded Pages
 const Home = lazy(() => import("pages/Home"));
 const FAQ = lazy(() => import("pages/FAQ"));
+const ContactUs = lazy(() => import("pages/ContactUs"));
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/faq",
         element: <FAQ />,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs />,
       },
     ],
   },

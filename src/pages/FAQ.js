@@ -39,15 +39,18 @@ const FAQ = () => {
 
   return (
     <div className="bg-gradient-to-b from-[#FFEDED] to-[#FFFFFF]">
-      <div className="max-w-[1350px] m-auto pt-[8rem]">
-        <div className="p-[5rem]">
+      <div className="max-w-[1350px] m-auto pt-[13rem]">
+        <div className="px-[5rem] pb-[5rem]">
           <h1 className="font-qanelas_b text-[56px] leading-[69px] text-[#0D0E13]">
             Got questions? <br />
             We’ve got answers too
           </h1>
           <div className="mt-[4rem]">
             {faqs.map((faq, index) => (
-              <div key={index} className="border-b-2 border-gray-200 p-4 mb-2 rounded-[10px] bg-white">
+              <div
+                key={index}
+                className="border-b-2 border-gray-200 p-4 mb-2 rounded-[10px] bg-white"
+              >
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex justify-between items-center text-[20px] font-qanelas_b text-[#0D0E13] hover:text-gray-900 focus:outline-none"

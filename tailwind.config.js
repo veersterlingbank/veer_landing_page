@@ -25,6 +25,10 @@ module.exports = {
       success_fade: "#F2FDF6",
       success_900: "#106032",
       warning: "#F59E0B",
+      neutral_stroke_1: "#DFE2E2",
+      neutral_disabled: "#F2F3F3",
+      neutral_stroke_2: "#ECEEEE",
+      border_stroke_1: "#D4D4D4",
     },
     fontSize: {
       6: "0.375rem",

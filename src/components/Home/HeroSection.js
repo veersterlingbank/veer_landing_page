@@ -1,5 +1,5 @@
 import HeroBG from "assets/images/hero-image.webp";
-import Button from "components/Button";
+import Button from "components/Inputs/Button";
 
 const HeroSection = () => {
   return (

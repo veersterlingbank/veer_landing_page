@@ -1,6 +1,6 @@
 import FooterTopBG from "assets/images/footer-top-bg.webp";
 import FooterBG from "assets/images/fulll-vector-logo.webp";
-import Button from "./Button";
+import Button from "./Inputs/Button";
 
 const Footer = () => {
   const menu = [

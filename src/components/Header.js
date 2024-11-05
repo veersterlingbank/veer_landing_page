@@ -1,18 +1,18 @@
 import React, { useCallback } from "react";
 import { ReactComponent as LogoWhite } from "assets/icons/veer-logo-white.svg";
 import { ReactComponent as LogoBlack } from "assets/icons/veer-logo-black.svg";
-import Button from "./Button";
+import Button from "./Inputs/Button";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const menuOptions = [
     {
       name: "Veer solutions",
-      link: "",
+      link: "/solutions",
     },
     {
       name: "About us",
-      link: "",
+      link: "about-us",
     },
     {
       name: "FAQ",
@@ -20,24 +20,26 @@ const Header = () => {
     },
     {
       name: "Contact us",
-      link: "",
+      link: "contact-us",
     },
   ];
   const navigate = useNavigate();
   const { pathname } = useLocation();
   console.log(pathname);
-  
+
   const test = useCallback(
     (item) => {
       const regex = new RegExp(item?.toLowerCase());
-      console.log('Got here', regex.exec(pathname));
-      
+      console.log("Got here", regex.exec(pathname));
+
       return regex.exec(pathname);
     },
     [pathname]
   );
 
-  const lightTheme = pathname.toLowerCase().includes('faq')
+  const lightTheme =
+    pathname.toLowerCase().includes("faq") ||
+    pathname.toLowerCase().includes("contact-us");
   return (
     <div className="absolute w-full py-[20px]">
       <div
