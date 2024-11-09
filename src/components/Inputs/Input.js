@@ -21,7 +21,7 @@ const Input = ({
   showError,
   onBlur,
 }) => {
-  const { error, validate, setError } = useInputValidate(showError);
+  const { error, validate } = useInputValidate(showError);
 
   const inputError = useMemo(() => {
     return !(showError === false || !error);
