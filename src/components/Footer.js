@@ -88,26 +88,25 @@ const Footer = () => {
       }}
     >
       <div
-        className="w-[100%] mb-[4rem]"
+        className="lg:w-[85%] mb-[4rem] md:pl-[3rem] lg:pl-[6rem]"
         style={{
           height: "100%",
-          width: "85%",
+          // width: "85%",
           backgroundImage: `url(${FooterTopBG})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           borderRadius: "0 0 100px 0",
-          paddingLeft: "6rem",
+          // paddingLeft: "6rem",
         }}
       >
-        <div className="max-w-[1350px] m-auto flex justify-between p-[3rem]">
+        <div className="max-w-[1350px] m-auto lg:flex justify-between p-[2rem] lg:p-[3rem]">
           <div className="basis-[40%]">
-            <h3 className="text-[56px] font-qanelas_b leading-[69px] mb-8">
-              Do you need more <br />
-              information?
+            <h3 className="text-[45px] md:text-[56px] font-qanelas_b leading-[55px] md:leading-[69px] mb-8">
+              Do you need more information?
             </h3>
           </div>
           <div className="basis-[40%]">
-            <p className="font-qanelas_m w-[70%] mb-5">
+            <p className="font-qanelas_m w-full md:w-[70%] mb-5">
               Ready to enhance driver performance and make the roads safer for
               everyone? Reach out to us today and take the first step!
             </p>
@@ -119,8 +118,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1350px] m-auto flex">
-        <div className="basis-[17%]">
+      <div className="max-w-[1350px] m-auto flex flex-wrap px-[2rem] lg:p-0">
+        <div className="basis-[47%] md:basis-[30%] lg:basis-[17%] mb-[3rem]">
           <h6 className="text-[#94A3B8] text-[14px] mb-[15px]">MENU</h6>
           {menu.map((item, index) => (
             <p
@@ -134,7 +133,7 @@ const Footer = () => {
             </p>
           ))}
         </div>
-        <div className="basis-[20%]">
+        <div className="basis-[47%] md:basis-[30%] lg:basis-[20%] mb-[3rem]">
           <h6 className="text-[#94A3B8] text-[14px] mb-[15px]">ENTERPRISE</h6>
           {enterprise.map((item, index) => (
             <p
@@ -148,7 +147,7 @@ const Footer = () => {
             </p>
           ))}
         </div>
-        <div className="basis-[20%]">
+        <div className="basis-[47%] md:basis-[30%] lg:basis-[20%] mb-[3rem]">
           <h6 className="text-[#94A3B8] text-[14px] mb-[15px]">LEGAL</h6>
           {legal.map((item, index) => (
             <p
@@ -162,7 +161,7 @@ const Footer = () => {
             </p>
           ))}
         </div>
-        <div className="basis-[20%]">
+        <div className="basis-[47%] md:basis-[30%] lg:basis-[20%] mb-[3rem]">
           <h6 className="text-[#94A3B8] text-[14px] mb-[15px]">
             STAY IN TOUCH
           </h6>
@@ -172,7 +171,7 @@ const Footer = () => {
             </p>
           ))}
         </div>
-        <div className="basis-[23%]">
+        <div className="basis-[100%] md:basis-[60%] lg:basis-[23%] mt-[2rem] md:m-0">
           <p className="text-[#94A3B8] text-[14px] mb-[15px]">
             Veers provides a comprehensive digital driver training platform
             utilising an LMS (Learning Management System), simulators, and
@@ -182,7 +181,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="h-[13rem]"></div>
+      <div className="h-[3rem] lg:h-[13rem]"></div>
     </div>
   );
 };

@@ -35,17 +35,17 @@ const Section2 = () => {
   return (
     <div className="">
       <div
-        className="w-[100%] px-[5rem] py-[7rem] mt-[-5rem]"
+        className="w-full md:w-[97%] px-[1rem] xl:px-[5rem] md:px-[3rem] py-[7rem] mt-[-5rem]"
         style={{
           height: "100%",
-          width: "97%",
+          // width: "97%",
           backgroundImage: `url(${TopBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
       >
         <div className="max-w-[1350px] m-auto">
-          <h3 className="text-32 font-qanelas_b w-[70%] leading-[44px] mb-8">
+          <h3 className="text-28 xl:text-32 font-qanelas_b w-full xl:w-[70%] leading-[40px] md:leading-[44px] mb-8">
             Our company aims to enhance driver safety and efficiency with
             immersive, risk-free training. Our platform empowers commercial
             drivers to sharpen their skills in a controlled environment,
@@ -54,14 +54,13 @@ const Section2 = () => {
           <Button name={"Learn more"} theme={"transparent"} />
         </div>
       </div>
-      <div className="max-w-[1350px] m-auto flex justify-between mt-[5rem]">
-        <div className="basis-[30%]">
+      <div className="max-w-[1350px] m-auto md:flex justify-between mt-[5rem]">
+        <div className="basis-[30%] px-[1rem] md:pl-[3rem] 2xl:p-0 mb-[3rem] md:m-0">
           <p className="text-light_brand_primary font-qanelas_m">
             WHAT WE OFFER
           </p>
-          <h3 className="font-qanelas_b text-[36px] leading-[44px] mt-[1rem] mb-[1.5rem] text-[#222222]">
-            A Comprehensive Suite <br />
-            for drivers training.
+          <h3 className="font-qanelas_b text-[30px] leading-[38px] xl:text-[36px] xl:leading-[44px] mt-[1rem] mb-[1.5rem] text-[#222222]">
+            A Comprehensive Suite for drivers training.
           </h3>
           <p className="text-[16px] text-[#222222] mb-8">
             We Solve the biggest challenges in drivers training. Everything you
@@ -73,7 +72,7 @@ const Section2 = () => {
             className={"border-[#191C24] text-[#191C24]"}
           />
         </div>
-        <div className="basis-[60%] flex justify-between flex-wrap p-[3rem]">
+        <div className="md:basis-[65%] xl:basis-[60%] md:flex justify-between flex-wrap px-[1rem] py-[3rem] md:p-[3rem]">
           {services.map((item, index) => (
             <div key={index} className="basis-[43%] mb-[4rem]">
               {item.icon}

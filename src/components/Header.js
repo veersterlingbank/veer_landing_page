@@ -28,7 +28,6 @@ const Header = () => {
   ];
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  console.log(pathname);
 
   const test = useCallback(
     (item) => {

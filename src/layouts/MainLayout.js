@@ -19,7 +19,6 @@ export const useModal = () => useContext(ModalContext);
 export default function MainLayout() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  console.log(isModalOpen);
 
   const toggleModal = () => {
     setIsModalOpen((prev) => !prev);
@@ -54,7 +53,7 @@ export default function MainLayout() {
         <Suspense fallback={<Spinner />}>
           <Header />
           <Outlet />
-          {/* <Footer /> */}
+          <Footer />
           {isModalOpen && <ScheduleDemo />}
           {isMenuOpen && <MobileMenu />}
         </Suspense>

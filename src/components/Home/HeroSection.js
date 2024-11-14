@@ -16,11 +16,11 @@ const HeroSection = () => {
       }}
     >
       <div className="h-full max-w-[1350px] m-auto flex flex-col items-center justify-center">
-        <div className="w-[60%]">
-          <h1 className="font-qanelas_eb text-[70px] leading-[90px]">
+        <div className="w-[80%] lg:w-[60%]">
+          <h1 className="font-qanelas_b xl:font-qanelas_eb text-[56px] xl:text-[70px] leading-[69px] xl:leading-[90px]">
             Empower Your Drivers. Master Every Mile.
           </h1>
-          <p className="w-[60%] font-qanelas_m mt-3 mb-8">
+          <p className="w-full md:w-[80%] xl:w-[60%] font-qanelas_m mt-3 mb-8">
             Revolutionize driver training with digital learning solutions,
             cutting-edge simulators, real time driver behaviour tracking, and
             automated certification — driving safer, smarter, and compliant
