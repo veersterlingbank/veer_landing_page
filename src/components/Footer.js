@@ -88,7 +88,7 @@ const Footer = () => {
       }}
     >
       <div
-        className="lg:w-[85%] mb-[4rem] md:pl-[3rem] lg:pl-[6rem]"
+        className="lg:w-[95%] 2xl:w-[85%] mb-[4rem] md:pl-[3rem] lg:pl-[2rem] 2xl:pl-[6rem]"
         style={{
           height: "100%",
           // width: "85%",
@@ -99,14 +99,14 @@ const Footer = () => {
           // paddingLeft: "6rem",
         }}
       >
-        <div className="max-w-[1350px] m-auto lg:flex justify-between p-[2rem] lg:p-[3rem]">
-          <div className="basis-[40%]">
-            <h3 className="text-[45px] md:text-[56px] font-qanelas_b leading-[55px] md:leading-[69px] mb-8">
+        <div className="max-w-[1350px] m-auto lg:flex justify-between p-[2rem] 2xl:p-[3rem]">
+          <div className="basis-[47%]">
+            <h3 className="text-[45px] 2xl:text-[56px] font-qanelas_b leading-[55px] 2xl:leading-[69px] mb-8">
               Do you need more information?
             </h3>
           </div>
           <div className="basis-[40%]">
-            <p className="font-qanelas_m w-full md:w-[70%] mb-5">
+            <p className="font-qanelas_m w-full xl:w-[70%] mb-5">
               Ready to enhance driver performance and make the roads safer for
               everyone? Reach out to us today and take the first step!
             </p>
@@ -118,7 +118,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1350px] m-auto flex flex-wrap px-[2rem] lg:p-0">
+      <div className="max-w-[1350px]  w-[90%] 2xl:w-full m-auto flex flex-wrap px-[2rem] xl:p-0">
         <div className="basis-[47%] md:basis-[30%] lg:basis-[17%] mb-[3rem]">
           <h6 className="text-[#94A3B8] text-[14px] mb-[15px]">MENU</h6>
           {menu.map((item, index) => (

@@ -14,7 +14,7 @@ const Section5 = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="max-w-[1350px] m-auto h-full py-[5rem]">
+        <div className="max-w-[1350px] w-[90%] 2xl:w-full m-auto h-full py-[5rem]">
           <div className="h-full flex flex-col justify-between">
             <h3 className="text-[56px] leading-[69px] font-qanelas_b">
               From Accidents to <br />
@@ -50,7 +50,7 @@ const Section5 = () => {
               Excellence
             </h3>
             <div className="">
-              <p className="font-qanelas_m leading-[19px]">
+              <p className="font-qanelas_m leading-[20px]">
                 We Solve the biggest challenges in fleet management. Everything
                 you need to train, track, and certify your drivers— all in one
                 platform. Revolutionize driver training with cutting-edge

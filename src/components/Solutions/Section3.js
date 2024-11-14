@@ -59,17 +59,16 @@ const Section3 = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="max-w-[1350px] m-auto flex gap-[3rem] items-end mb-[3rem]">
-        <div className="basis-[30%]">
+      <div className="max-w-[1350px] m-auto md:flex gap-[3rem] items-end mb-[3rem] px-[1rem] md:pl-[3rem] 2xl:p-0">
+        <div className="md:basis-[47%] xl:basis-[30%]">
           <p className="text-light_brand_primary font-qanelas_m">
             OUR SOLUTIONS
           </p>
           <h3 className="font-qanelas_b text-[36px] leading-[44px] mt-[1rem] mb-[1.5rem] text-[#222222]">
-            Tailored Solutions for <br />
-            Safer, Smarter Driving
+            Tailored Solutions for Safer, Smarter Driving
           </h3>
         </div>
-        <div className="basis-[30%]">
+        <div className="md:basis-[47%] xl:basis-[30%]">
           <p className="text-[16px] font-qanelas_m text-[#191C24] mb-8">
             Explore our range of innovative products designed to enhance driver
             safety, boost operational efficiency, and foster skill development.
@@ -78,13 +77,13 @@ const Section3 = () => {
       </div>
       {values.map((item, index) => (
         <div key={index} className="flex flex-col items-end">
-          <div className="bg-white rounded-tl-[50px] py-[4rem] mb-[3rem] w-[90%]">
+          <div className="bg-white rounded-tl-[50px] py-[4rem] px-[2rem] md:px-[4rem] lg:px-[2rem] 2xl:px-0 mb-[3rem] w-full lg:w-[90%]">
             <div className="max-w-[1350px] m-auto ">
-              <div className={`flex justify-between items-center`}>
-                <div className="basis-[40%] flex gap-[1.3rem]">
+              <div className="lg:flex justify-between items-center">
+                <div className="basis-[40%] lg:flex gap-[1.3rem]">
                   <div>{item.icon}</div>
                   <div>
-                    <h5 className="font-qanelas_b text-[24px] text-[#222222] mb-[1rem]">
+                    <h5 className="font-qanelas_b text-[24px] text-[#222222] mt-[1rem] lg:mt-0 mb-[1rem]">
                       {item.title}
                     </h5>
                     <p className="text-[#191C24] font-qanelas_m">
@@ -95,7 +94,7 @@ const Section3 = () => {
                     </p>
                   </div>
                 </div>
-                <div className="basis-[40%]">
+                <div className="basis-[40%] mt-[1.5rem] lg:mt-0">
                   <img src={item.image} alt={item.title} />
                 </div>
               </div>

@@ -73,7 +73,7 @@ const Section4 = () => {
 
   return (
     <div className="bg-[#12131A]">
-      <div className="hidden xl:block max-w-[1350px] m-auto pb-[8rem]">
+      <div className="hidden xl:block max-w-[1350px] w-[90%] 2xl:w-full m-auto pb-[8rem]">
         <div className="flex gap-[10%] pt-[7rem]">
           <div className="basis-[40%]">
             <p className="text-light_brand_primary font-qanelas_m">WHY VEER?</p>

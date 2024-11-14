@@ -150,9 +150,9 @@ const Section6 = () => {
           </p>
         </div>
       </div>
-      <div className="xl:flex flex-col items-end">
+      <div className="lg:flex flex-col items-end">
         <div className="bg-white rounded-tl-[50px] pt-[4rem] lg:w-[90%] relative">
-          <div className="hidden xl:block max-w-[1350px] m-auto ">
+          <div className="hidden xl:block max-w-[1350px] m-auto pl-[3rem]">
             <div className="border-b border-b-[#DEDEDE] mb-[3rem] flex justify-between">
               {stepsTop.map((item, index) => (
                 <div key={index} className="basis-[30%] mb-[4rem]">

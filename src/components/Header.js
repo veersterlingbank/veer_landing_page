@@ -1,7 +1,8 @@
 import React, { useCallback } from "react";
 import { ReactComponent as LogoWhite } from "assets/icons/veer-logo-white.svg";
 import { ReactComponent as LogoBlack } from "assets/icons/veer-logo-black.svg";
-import { ReactComponent as Hamburger } from "assets/icons/hamburger.svg";
+import { ReactComponent as LightHamburger } from "assets/icons/hamburger.svg";
+import { ReactComponent as DarkHamburger } from "assets/icons/hamburger-black.svg";
 import Button from "./Inputs/Button";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useModal } from "layouts/MainLayout";
@@ -95,7 +96,11 @@ const Header = () => {
           <Button name={"Get Started"} theme={"primary"} />
         </div>
         <div className="md:hidden">
-          <Hamburger onClick={() => toggleMenu()} />
+          {lightTheme ? (
+            <DarkHamburger onClick={() => toggleMenu()} />
+          ) : (
+            <LightHamburger onClick={() => toggleMenu()} />
+          )}
         </div>
       </div>
     </div>
