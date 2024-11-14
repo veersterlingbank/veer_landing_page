@@ -2,9 +2,11 @@ import FooterTopBG from "assets/images/footer-top-bg.webp";
 import FooterBG from "assets/images/fulll-vector-logo.webp";
 import Button from "./Inputs/Button";
 import { useNavigate } from "react-router-dom";
+import { useModal } from "layouts/MainLayout";
 
 const Footer = () => {
   const navigate = useNavigate();
+  const { toggleModal } = useModal();
   const menu = [
     {
       name: "Veer solutions",
@@ -109,7 +111,11 @@ const Footer = () => {
               Ready to enhance driver performance and make the roads safer for
               everyone? Reach out to us today and take the first step!
             </p>
-            <Button name={"Schedule a demo"} theme={"transparent"} />
+            <Button
+              name={"Schedule a demo"}
+              theme={"transparent"}
+              onClick={() => toggleModal()}
+            />
           </div>
         </div>
       </div>

@@ -1,7 +1,9 @@
 import HeroBG from "assets/images/hero-image.webp";
 import Button from "components/Inputs/Button";
+import { useModal } from "layouts/MainLayout";
 
 const HeroSection = () => {
+  const { toggleModal } = useModal();
   return (
     <div
       className="h-[100vh]"
@@ -24,7 +26,11 @@ const HeroSection = () => {
             automated certification — driving safer, smarter, and compliant
             fleets.
           </p>
-          <Button name={"Schedule a demo"} theme={"transparent"} />
+          <Button
+            name={"Schedule a demo"}
+            theme={"transparent"}
+            onClick={() => toggleModal()}
+          />
         </div>
       </div>
     </div>

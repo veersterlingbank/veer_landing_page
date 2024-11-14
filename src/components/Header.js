@@ -1,10 +1,13 @@
 import React, { useCallback } from "react";
 import { ReactComponent as LogoWhite } from "assets/icons/veer-logo-white.svg";
 import { ReactComponent as LogoBlack } from "assets/icons/veer-logo-black.svg";
+import { ReactComponent as Hamburger } from "assets/icons/hamburger.svg";
 import Button from "./Inputs/Button";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useModal } from "layouts/MainLayout";
 
 const Header = () => {
+  const { toggleMenu } = useModal();
   const menuOptions = [
     {
       name: "Veer solutions",
@@ -30,7 +33,7 @@ const Header = () => {
   const test = useCallback(
     (item) => {
       const regex = new RegExp(item?.toLowerCase());
-      console.log("Got here", regex.exec(pathname));
+      // console.log("Got here", regex.exec(pathname));
 
       return regex.exec(pathname);
     },
@@ -65,7 +68,7 @@ const Header = () => {
             }}
           />
         )}
-        <div className="flex items-center gap-10">
+        <div className="hidden md:flex items-center gap-10">
           {menuOptions.map((item, index) => (
             <p
               key={index}
@@ -82,7 +85,7 @@ const Header = () => {
             </p>
           ))}
         </div>
-        <div className="flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-6">
           <p
             className={`font-qanelas_m text-14 cursor-pointer ${
               lightTheme ? "text-black" : ""
@@ -91,6 +94,9 @@ const Header = () => {
             Log in
           </p>
           <Button name={"Get Started"} theme={"primary"} />
+        </div>
+        <div className="md:hidden">
+          <Hamburger onClick={() => toggleMenu()} />
         </div>
       </div>
     </div>
