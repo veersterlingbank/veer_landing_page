@@ -45,7 +45,7 @@ const Section2 = () => {
   ];
   return (
     <div
-      className="pt-[6rem]"
+      className="pt-[6rem] bg-[#F2F4F7]"
       style={{
         // height: "100%",
         // width: "100%",
@@ -55,15 +55,14 @@ const Section2 = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="max-w-[1350px] m-auto flex gap-[3rem] items-end mb-[3rem]">
-        <div className="basis-[30%]">
+      <div className="max-w-[1350px] m-auto md:flex gap-[3rem] items-end mb-[3rem] px-[1rem] md:pl-[3rem] 2xl:p-0">
+        <div className="md:basis-[47%] xl:basis-[30%]">
           <p className="text-light_brand_primary font-qanelas_m">OUR VALUES</p>
           <h3 className="font-qanelas_b text-[36px] leading-[44px] mt-[1rem] mb-[1.5rem] text-[#222222]">
-            Powering safer journeys <br />
-            for commercial drivers
+            Powering safer journeys for commercial drivers
           </h3>
         </div>
-        <div className="basis-[30%]">
+        <div className="md:basis-[47%] xl:basis-[30%]">
           <p className="text-[16px] font-qanelas_m text-[#191C24] mb-8">
             By focusing on realistic training scenarios and comprehensive
             feedback, we empower drivers to improve their performance, reduce
@@ -72,22 +71,22 @@ const Section2 = () => {
         </div>
       </div>
       <div className="flex flex-col items-end">
-        <div className="bg-white rounded-tl-[50px] pt-[4rem] w-[90%]">
+        <div className="bg-white rounded-tl-[50px] pt-[4rem] px-[2rem] md:px-[4rem] lg:px-[2rem] 2xl:px-0 w-full lg:w-[90%]">
           <div className="max-w-[1350px] m-auto ">
             <div className="mb-[3rem]">
               {values.map((item, index) => (
                 <div
                   key={index}
-                  className={`py-[3rem] flex justify-between items-center ${
+                  className={`py-[3rem] lg:flex justify-between items-center ${
                     values.length - 1 === index
                       ? ""
                       : "border-b border-b-[#DEDEDE]"
                   } ${(index + 1) % 2 === 0 ? "flex-row-reverse" : ""}`}
                 >
-                  <div className="basis-[40%] flex gap-[1.3rem]">
+                  <div className="basis-[40%] lg:flex gap-[1.3rem]">
                     <div>{item.icon}</div>
                     <div>
-                      <h5 className="font-qanelas_b text-[24px] text-[#222222] mb-[1rem]">
+                      <h5 className="font-qanelas_b text-[24px] text-[#222222] mt-[1rem] lg:mt-0 mb-[1rem]">
                         {item.title}
                       </h5>
                       <p className="text-[#191C24] font-qanelas_m">
@@ -98,7 +97,7 @@ const Section2 = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="basis-[40%]">
+                  <div className="basis-[40%] mt-[1.5rem] lg:mt-0">
                     <img src={item.image} alt={item.title} />
                   </div>
                 </div>

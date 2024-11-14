@@ -1,11 +1,11 @@
 const PrivacyPolicy = () => {
   return (
     <div className="bg-gradient-to-b from-[#FFEDED] to-[#FFFFFF]">
-      <div className="max-w-[1350px] w-[55%] m-auto pt-[13rem] pb-[5rem]">
-        <h1 className="font-qanelas_b text-[56px] leading-[69px] text-[#0D0E13]">
+      <div className="max-w-[1350px] w-[90%] xl:w-[55%] m-auto pt-[10rem] xl:pt-[13rem] pb-[5rem]">
+        <h1 className="font-qanelas_b text-[36px] lg:text-[56px] leading-[43px] lg:leading-[69px] text-[#0D0E13]">
           Privacy Policy
         </h1>
-        <div className="mt-[4rem]">
+        <div className="mt-[2rem] xl:mt-[4rem]">
           <div className="mb-[30px]">
             <h4 className="font-qanelas_b text-[#0D0E13]">Responsibility</h4>
             <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">

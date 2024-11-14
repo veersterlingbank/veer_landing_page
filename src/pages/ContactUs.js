@@ -24,12 +24,12 @@ const ContactUs = () => {
 
   return (
     <div className="bg-gradient-to-b from-[#FFEDED] to-[#FFFFFF] pb-[5rem]">
-      <div className="max-w-[1350px] m-auto pt-[13rem] px-[4rem] flex justify-between">
-        <div className="basis-[35%] pt-[2rem]">
-          <h1 className="font-qanelas_b text-[56px] leading-[69px] text-[#0D0E13] mb-[2rem]">
+      <div className="max-w-[1350px] w-full md:w-[90%] m-auto pt-[10rem] xl:pt-[13rem] md:flex justify-between">
+        <div className="px-[2rem] md:px-0 basis-[35%] pt-[2rem]">
+          <h1 className="font-qanelas_b text-[36px] lg:text-[56px] leading-[43px] lg:leading-[69px] text-[#0D0E13] mb-[2rem]">
             Get in touch
           </h1>
-          <div className="mb-[3rem]">
+          <div className="mb-[1.5rem] xl:mb-[3rem]">
             <p className="text-light_brand_primary font-qanelas_m mb-[0.5rem]">
               HEAD OFFICE
             </p>
@@ -39,7 +39,7 @@ const ContactUs = () => {
               017003270
             </p>
           </div>
-          <div className="">
+          <div className="mb-[3rem] xl:mb-0">
             <p className="text-light_brand_primary font-qanelas_m mb-[0.5rem]">
               CONTACT LINKS
             </p>
@@ -47,13 +47,13 @@ const ContactUs = () => {
             <p className="font-qanelas_m text-[#222222]">+234 7066158264</p>
           </div>
         </div>
-        <div className="basis-[55%]">
-          <div className="bg-white py-[3rem] px-[4rem] rounded-[20px]">
+        <div className="basis-[60%] xl:basis-[55%]">
+          <div className="bg-white py-[3rem] px-[2rem] xl:px-[4rem] rounded-[20px]">
             <h5 className="text-black font-qanelas_b text-[24px] mb-[2rem]">
               Write us a message
             </h5>
             <form action="">
-              <div className="flex justify-between ">
+              <div className="lg:flex justify-between ">
                 <div className="basis-[47%]">
                   <Input
                     label="First Name"
@@ -79,7 +79,7 @@ const ContactUs = () => {
                   />
                 </div>
               </div>
-              <div className="flex justify-between ">
+              <div className="lg:flex justify-between ">
                 <div className="basis-[47%]">
                   <Input
                     label="Email address"

@@ -49,26 +49,26 @@ const Header = () => {
   return (
     <div className="absolute w-full py-[20px]">
       <div
-        className={`flex justify-between items-center h-[80px] max-w-[1350px] m-auto rounded-[50px] px-[2rem] ${
+        className={`flex justify-between items-center h-[60px] lg:h-[80px] max-w-[1350px] w-[90%] 2xl:w-full m-auto rounded-[50px] px-[2rem] ${
           lightTheme ? "bg-white" : "backdrop-blur-sm bg-white/10"
         }`}
       >
         {lightTheme ? (
           <LogoBlack
-            className="w-[6.5rem] cursor-pointer"
+            className="w-[5rem] xl:w-[6.5rem] cursor-pointer"
             onClick={() => {
               navigate("/");
             }}
           />
         ) : (
           <LogoWhite
-            className="w-[6.5rem] cursor-pointer"
+            className="w-[5rem] xl:w-[6.5rem] cursor-pointer"
             onClick={() => {
               navigate("/");
             }}
           />
         )}
-        <div className="hidden md:flex items-center gap-10">
+        <div className="hidden lg:flex items-center gap-10">
           {menuOptions.map((item, index) => (
             <p
               key={index}
@@ -85,7 +85,7 @@ const Header = () => {
             </p>
           ))}
         </div>
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-6">
           <p
             className={`font-qanelas_m text-14 cursor-pointer ${
               lightTheme ? "text-black" : ""
@@ -95,7 +95,7 @@ const Header = () => {
           </p>
           <Button name={"Get Started"} theme={"primary"} />
         </div>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           {lightTheme ? (
             <DarkHamburger onClick={() => toggleMenu()} />
           ) : (

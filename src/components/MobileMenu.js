@@ -27,10 +27,11 @@ const MobileMenu = () => {
   ];
   return (
     <div className="bg-white absolute top-0 left-0 w-full h-[100vh] p-[2rem]">
-      <div className="flex justify-between">
+      <div className="flex justify-between h-[60px] px-[1rem]">
         <LogoBlack
           className="w-[6.5rem] cursor-pointer"
           onClick={() => {
+            closeMenu();
             navigate("/");
           }}
         />
@@ -45,6 +46,7 @@ const MobileMenu = () => {
             key={index}
             className="font-qanelas_m text-[32px] mb-[2.5rem] text-[#222222] cursor-pointer"
             onClick={() => {
+              closeMenu();
               navigate(item.link);
             }}
           >

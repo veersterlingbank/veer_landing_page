@@ -118,7 +118,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1350px]  w-[90%] 2xl:w-full m-auto flex flex-wrap px-[2rem] xl:p-0">
+      <div className="max-w-[1350px]  w-[90%] 2xl:w-full m-auto flex flex-wrap">
         <div className="basis-[47%] md:basis-[30%] lg:basis-[17%] mb-[3rem]">
           <h6 className="text-[#94A3B8] text-[14px] mb-[15px]">MENU</h6>
           {menu.map((item, index) => (
