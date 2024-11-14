@@ -2,9 +2,10 @@ import Button from "components/Inputs/Button";
 import HeroImgA from "assets/images/solutions-hero-a.webp";
 import HeroImgB from "assets/images/solutions-hero-b.webp";
 import HeroImgC from "assets/images/solutions-hero-c.webp";
-
+import { useModal } from "layouts/MainLayout";
 
 const HeroSection = () => {
+  const { toggleModal } = useModal();
   return (
     <div className="md:h-[70vh] lg:h-[100vh] bg-gradient-to-b from-[#FFEDED] to-[#FFFFFF] pb-[18rem] md:pb-[50rem] 2xl:pb-0">
       <div className="max-w-[1350px] md:w-[90%] 2xl:w-full  m-auto pt-[13rem] md:flex justify-between">
@@ -20,6 +21,7 @@ const HeroSection = () => {
             name={"Schedule a demo"}
             theme={"transparent"}
             className={"border-[#191C24] text-[#191C24]"}
+            onClick={() => toggleModal()}
           />
         </div>
         <div className="relative basis-[45%]">
