@@ -33,9 +33,9 @@ const Section2 = () => {
     },
   ];
   return (
-    <div className="">
+    <div className="relative z-20">
       <div
-        className="w-full md:w-[97%] px-[1rem] xl:px-[5rem] md:px-[3rem] py-[7rem] mt-[-5rem]"
+        className="w-full md:w-[97%] px-[1rem] xl:px-[5rem] md:px-[3rem] py-[7rem] lg:mt-[-5rem]"
         style={{
           height: "100%",
           // width: "97%",
