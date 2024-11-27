@@ -4,6 +4,9 @@ import Input from "components/Inputs/Input";
 import TextArea from "components/Inputs/TextArea";
 import { useState } from "react";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
+
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -26,10 +29,22 @@ const ContactUs = () => {
     <div className="bg-gradient-to-b from-[#FFEDED] to-[#FFFFFF] pb-[5rem]">
       <div className="max-w-[1350px] w-full md:w-[90%] m-auto pt-[10rem] xl:pt-[13rem] md:flex justify-between">
         <div className="px-[2rem] md:px-0 basis-[35%] pt-[2rem]">
-          <h1 className="font-qanelas_b text-[36px] lg:text-[56px] leading-[43px] lg:leading-[69px] text-[#0D0E13] mb-[2rem]">
+          <motion.h1
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="font-qanelas_b text-[36px] lg:text-[56px] leading-[43px] lg:leading-[69px] text-[#0D0E13] mb-[2rem]"
+          >
             Get in touch
-          </h1>
-          <div className="mb-[1.5rem] xl:mb-[3rem]">
+          </motion.h1>
+          <motion.div
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="mb-[1.5rem] xl:mb-[3rem]"
+          >
             <p className="text-light_brand_primary font-qanelas_m mb-[0.5rem]">
               HEAD OFFICE
             </p>
@@ -38,16 +53,28 @@ const ContactUs = () => {
               20 Marina, Lagos Island, Lagos. <br />
               017003270
             </p>
-          </div>
-          <div className="mb-[3rem] xl:mb-0">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="mb-[3rem] xl:mb-0"
+          >
             <p className="text-light_brand_primary font-qanelas_m mb-[0.5rem]">
               CONTACT LINKS
             </p>
             <p className="font-qanelas_m text-[#222222]">info@veer.ng</p>
             <p className="font-qanelas_m text-[#222222]">+234 7066158264</p>
-          </div>
+          </motion.div>
         </div>
-        <div className="basis-[60%] xl:basis-[55%]">
+        <motion.div
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="basis-[60%] xl:basis-[55%]"
+        >
           <div className="bg-white py-[3rem] px-[2rem] xl:px-[4rem] rounded-[20px]">
             <h5 className="text-black font-qanelas_b text-[24px] mb-[2rem]">
               Write us a message
@@ -149,7 +176,7 @@ const ContactUs = () => {
               <Button name={"Submit"} theme={"primary"} className={"w-full"} />
             </form>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -31,7 +31,7 @@ const ScheduleDemo = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   return (
-    <div className="bg-[#00000046] h-[100vh] w-[100vw] z-[10] fixed top-0 left-0">
+    <div className="bg-[#00000046] h-[100vh] w-[100vw] fixed top-0 left-0 z-20">
       <div className="py-[3rem] lg:py-[5rem] px-[2rem] lg:px-[8rem] h-[100vh] w-full lg:w-[70%] bg-white absolute right-0">
         <div className="lg:flex lg:space-x-[4rem]">
           <div className="">
@@ -47,7 +47,7 @@ const ScheduleDemo = () => {
               onClick={() => closeModal()}
             />
           </div>
-          <div className="h-[80vh] lg:h-[85vh] mt-[3rem] overflow-y-auto">
+          <div className="h-[80vh] lg:h-[85vh] mt-[3rem] pb-[4rem] overflow-y-auto">
             <h3 className="text-32 font-qanelas_b w-full lg:w-[70%] text-[#0D0E13] leading-[40px] mb-2">
               Let us show you the future of drivers management.
             </h3>

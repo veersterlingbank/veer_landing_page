@@ -2,6 +2,9 @@ import { useState } from "react";
 import { ReactComponent as ArrowUp } from "assets/icons/faq-arrow-up.svg";
 import { ReactComponent as ArrowDown } from "assets/icons/faq-arrow-down.svg";
 
+import { motion, AnimatePresence } from "framer-motion";
+import { fadeIn } from "variants.js";
+
 const FAQ = () => {
   const faqs = [
     {
@@ -41,30 +44,44 @@ const FAQ = () => {
     <div className="bg-gradient-to-b from-[#FFEDED] to-[#FFFFFF]">
       <div className="max-w-[1350px] w-[90%] xl:w-[55%] m-auto pt-[10rem] xl:pt-[13rem]">
         <div className="pb-[5rem]">
-          <h1 className="font-qanelas_b text-[36px] lg:text-[56px] leading-[43px] lg:leading-[69px] text-[#0D0E13]">
+          <motion.h1
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="font-qanelas_b text-[36px] lg:text-[56px] leading-[43px] lg:leading-[69px] text-[#0D0E13]"
+          >
             Got questions? <br />
             We’ve got answers too
-          </h1>
+          </motion.h1>
           <div className="mt-[4rem]">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="border-b-2 border-gray-200 p-4 mb-2 rounded-[10px] bg-white"
-              >
-                <button
-                  onClick={() => toggleFAQ(index)}
-                  className="w-full flex justify-between text-left items-center lg:text-[20px] font-qanelas_b text-[#0D0E13] hover:text-gray-900 focus:outline-none"
+            <AnimatePresence>
+              {faqs.map((faq, index) => (
+                <motion.div
+                  variants={fadeIn("right", 0.2 + index * 0.1)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: true, amount: 0.7 }}
+                  key={index}
+                  className="transition-all border-b-2 border-gray-200 p-4 mb-2 rounded-[10px] bg-white"
                 >
-                  {faq.question}
-                  <span className="">
-                    {openIndex === index ? <ArrowUp /> : <ArrowDown />}
-                  </span>
-                </button>
-                {openIndex === index && (
-                  <p className="mt-3 text-black w-[90%] lg:w-[70%]">{faq.answer}</p>
-                )}
-              </div>
-            ))}
+                  <button
+                    onClick={() => toggleFAQ(index)}
+                    className="w-full flex justify-between text-left items-center lg:text-[20px] font-qanelas_b text-[#0D0E13] hover:text-gray-900 focus:outline-none"
+                  >
+                    {faq.question}
+                    <span className="">
+                      {openIndex === index ? <ArrowUp /> : <ArrowDown />}
+                    </span>
+                  </button>
+                  {openIndex === index && (
+                    <p className="mt-3 text-black w-[90%] lg:w-[70%]">
+                      {faq.answer}
+                    </p>
+                  )}
+                </motion.div>
+              ))}
+            </AnimatePresence>
           </div>
         </div>
       </div>

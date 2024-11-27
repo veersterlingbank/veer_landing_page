@@ -156,7 +156,7 @@ const Footer = () => {
             </p>
           ))}
         </motion.div>
-        <motion.div
+        {/* <motion.div
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
@@ -175,7 +175,7 @@ const Footer = () => {
               {item.name}
             </p>
           ))}
-        </motion.div>
+        </motion.div> */}
         <motion.div
           variants={fadeIn("up", 0.4)}
           initial="hidden"
