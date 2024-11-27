@@ -5,6 +5,9 @@ import { ReactComponent as Service3 } from "assets/icons/services-icon-3.svg";
 import { ReactComponent as Service4 } from "assets/icons/services-icon-4.svg";
 import Button from "components/Inputs/Button";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
+
 const Section2 = () => {
   const services = [
     {
@@ -34,7 +37,11 @@ const Section2 = () => {
   ];
   return (
     <div className="relative z-20">
-      <div
+      <motion.div
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
         className="w-full md:w-[97%] px-[1rem] xl:px-[5rem] md:px-[3rem] py-[7rem] lg:mt-[-5rem]"
         style={{
           height: "100%",
@@ -53,7 +60,7 @@ const Section2 = () => {
           </h3>
           <Button name={"Learn more"} theme={"transparent"} />
         </div>
-      </div>
+      </motion.div>
       <div className="max-w-[1350px] m-auto md:flex justify-between mt-[5rem]">
         <div className="basis-[30%] px-[1rem] md:pl-[3rem] 2xl:p-0 mb-[3rem] md:m-0">
           <p className="text-light_brand_primary font-qanelas_m">
