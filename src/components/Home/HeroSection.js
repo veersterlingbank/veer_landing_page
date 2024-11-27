@@ -27,7 +27,7 @@ const HeroSection = () => {
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="md:pt-[3rem] w-[90%] md:w-full mx-auto mb-[4rem] md:m-0 basis-[45%]"
         >
           <h1 className="font-qanelas_b text-[36px] md:text-[46px] lg:text-[56px] leading-[44px] md:leading-[59px] lg:leading-[69px] text-white">
@@ -51,7 +51,7 @@ const HeroSection = () => {
             variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             className="rounded-lg"
             src={HeroImgA}
             alt="An Happy Driver"
@@ -60,7 +60,7 @@ const HeroSection = () => {
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             className="px-[30px] lg:px-0 w-[100%] md:w-[60%] absolute top-[70%] md:top-[30%] lg:top-[40%] left-[0] md:left-[-10%] lg:left-[-35%]"
           >
             <img className="" src={HeroImgB} alt="Driver Progress Tracking" />

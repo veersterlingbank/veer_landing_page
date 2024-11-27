@@ -10,6 +10,9 @@ import { ReactComponent as Prev } from "assets/icons/carousel-prev-arrow.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
+
 const Section6 = () => {
   const responsive = {
     superLargeDesktop: {
@@ -134,7 +137,13 @@ const Section6 = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="max-w-[1350px] m-auto md:flex gap-[3rem] items-end mb-[3rem] px-[1rem] md:pl-[3rem] 2xl:p-0">
+      <motion.div
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.7 }}
+        className="max-w-[1350px] m-auto md:flex gap-[3rem] items-end mb-[3rem] px-[1rem] md:pl-[3rem] 2xl:p-0"
+      >
         <div className="md:basis-[47%] xl:basis-[30%]">
           <p className="text-light_brand_primary font-qanelas_m">
             HOW IT WORKS
@@ -149,13 +158,20 @@ const Section6 = () => {
             need to train, track, and certify your drivers— all in one platform.
           </p>
         </div>
-      </div>
+      </motion.div>
       <div className="lg:flex flex-col items-end">
         <div className="bg-white rounded-tl-[50px] pt-[4rem] lg:w-[90%] relative">
           <div className="hidden xl:block max-w-[1350px] m-auto pl-[3rem]">
             <div className="border-b border-b-[#DEDEDE] mb-[3rem] flex justify-between">
               {stepsTop.map((item, index) => (
-                <div key={index} className="basis-[30%] mb-[4rem]">
+                <motion.div
+                  variants={fadeIn("up", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: true, amount: 0.7 }}
+                  key={index}
+                  className="basis-[30%] mb-[4rem]"
+                >
                   <p className="text-light_brand_primary font-qanelas_m text-[14px]">
                     {item.step}
                   </p>
@@ -163,12 +179,19 @@ const Section6 = () => {
                     {item.title}
                   </h5>
                   <img src={item.image} alt={item.title} />
-                </div>
+                </motion.div>
               ))}
             </div>
             <div className="flex justify-between">
               {stepsBottom.map((item, index) => (
-                <div key={index} className="basis-[30%]">
+                <motion.div
+                  variants={fadeIn("up", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: true, amount: 0.7 }}
+                  key={index}
+                  className="basis-[30%]"
+                >
                   <p className="text-light_brand_primary font-qanelas_m text-[14px]">
                     {item.step}
                   </p>
@@ -176,7 +199,7 @@ const Section6 = () => {
                     {item.title}
                   </h5>
                   <img src={item.image} alt={item.title} />
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

@@ -41,7 +41,7 @@ const Section2 = () => {
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.7 }}
         className="w-full md:w-[97%] px-[1rem] xl:px-[5rem] md:px-[3rem] py-[7rem] lg:mt-[-5rem]"
         style={{
           height: "100%",
@@ -62,7 +62,13 @@ const Section2 = () => {
         </div>
       </motion.div>
       <div className="max-w-[1350px] m-auto md:flex justify-between mt-[5rem]">
-        <div className="basis-[30%] px-[1rem] md:pl-[3rem] 2xl:p-0 mb-[3rem] md:m-0">
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="basis-[30%] px-[1rem] md:pl-[3rem] 2xl:p-0 mb-[3rem] md:m-0"
+        >
           <p className="text-light_brand_primary font-qanelas_m">
             WHAT WE OFFER
           </p>
@@ -78,16 +84,23 @@ const Section2 = () => {
             theme={"transparent"}
             className={"border-[#191C24] text-[#191C24]"}
           />
-        </div>
+        </motion.div>
         <div className="md:basis-[65%] xl:basis-[60%] md:flex justify-between flex-wrap px-[1rem] py-[3rem] md:p-[3rem]">
           {services.map((item, index) => (
-            <div key={index} className="basis-[43%] mb-[4rem]">
+            <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.7 }}
+              key={index}
+              className="basis-[43%] mb-[4rem]"
+            >
               {item.icon}
               <h5 className="font-qanelas_b text-[24px] text-[#222222] mt-[1.5rem] mb-[0.5rem]">
                 {item.title}
               </h5>
               <p className="font-qanelas_m text-[#191C24]">{item.content}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
