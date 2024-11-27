@@ -13,9 +13,9 @@ const HeroSection = () => {
   const { toggleModal } = useModal();
   return (
     <div
-      className="lg:h-[100vh]"
+      className="md:h-[70vh] lg:h-[100vh] pb-[18rem] md:pb-[50rem]"
       style={{
-        height: "100%",
+        // height: "100%",
         width: "100%",
         backgroundImage: `url(${HeroBG})`,
         backgroundSize: "cover",
@@ -23,29 +23,42 @@ const HeroSection = () => {
       }}
     >
       <div className="max-w-[1350px] md:w-[90%] 2xl:w-full m-auto pt-[13rem] md:flex justify-between">
-        <motion.div
-          variants={fadeIn("right", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
-          className="md:pt-[3rem] w-[90%] md:w-full mx-auto mb-[4rem] md:m-0 basis-[45%]"
-        >
-          <h1 className="font-qanelas_b text-[36px] md:text-[46px] lg:text-[56px] leading-[44px] md:leading-[59px] lg:leading-[69px] text-white">
+        <div className="w-[90%] md:w-full mx-auto mb-[4rem] md:m-0 basis-[50%]">
+          <motion.h1
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="font-qanelas_b text-[36px] md:text-[46px] xl:text-[56px] leading-[44px] md:leading-[59px] xl:leading-[69px] text-white"
+          >
             Empower Your Drivers. Master Every Mile.
-          </h1>
-          <p className="text-white font-qanelas_m lg:w-[80%] w-full mt-[1rem] mb-[3rem]">
+          </motion.h1>
+          <motion.p
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="text-white font-qanelas_m lg:w-[70%] w-full mt-[1rem] mb-[3rem]"
+          >
             Revolutionize driver training with digital learning solutions,
             cutting-edge simulators, real time driver behaviour tracking, and
             automated certification — driving safer, smarter, and compliant
             fleets.
-          </p>
-          <Button
-            name={"Schedule a demo"}
-            theme={"transparent"}
-            className={"border-white text-white"}
-            onClick={() => toggleModal()}
-          />
-        </motion.div>
+          </motion.p>
+          <motion.div
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+          >
+            <Button
+              name={"Schedule a demo"}
+              theme={"transparent"}
+              className={"border-white text-white"}
+              onClick={() => toggleModal()}
+            />
+          </motion.div>
+        </div>
         <div className="relative z-10 basis-[45%] px-[20px] lg:px-0">
           <motion.img
             variants={fadeIn("left", 0.2)}
@@ -70,7 +83,7 @@ const HeroSection = () => {
               alt="Overall Performance Score"
             />
             <img
-              className="mt-2 hidden lg:block"
+              className="mt-2 md:block"
               src={HeroImgD}
               alt="Traffic Laws and Regulations"
             />

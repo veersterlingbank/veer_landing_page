@@ -80,7 +80,8 @@ export default function MainLayout() {
           <Outlet />
           <Footer />
           {isModalOpen && <ScheduleDemo />}
-          <AnimatePresence>
+          {isMenuOpen && <MobileMenu />}
+          {/* <AnimatePresence>
             {isMenuOpen && (
               <motion.div
                 animate={style.animate}
@@ -90,7 +91,7 @@ export default function MainLayout() {
                 <MobileMenu />
               </motion.div>
             )}
-          </AnimatePresence>
+          </AnimatePresence> */}
         </Suspense>
       </div>
     </ModalContext.Provider>
