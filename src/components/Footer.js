@@ -102,19 +102,27 @@ const Footer = () => {
           // paddingLeft: "6rem",
         }}
       >
-        <motion.div
-          variants={fadeIn("right", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
+        <div
           className="max-w-[1350px] m-auto lg:flex justify-between p-[2rem] 2xl:p-[3rem]"
         >
-          <div className="basis-[47%]">
+          <motion.div
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="basis-[47%]"
+          >
             <h3 className="text-[45px] 2xl:text-[56px] font-qanelas_b leading-[55px] 2xl:leading-[69px] mb-8">
               Do you need more information?
             </h3>
-          </div>
-          <div className="basis-[40%]">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="basis-[40%]"
+          >
             <p className="font-qanelas_m w-full xl:w-[70%] mb-5">
               Ready to enhance driver performance and make the roads safer for
               everyone? Reach out to us today and take the first step!
@@ -124,8 +132,8 @@ const Footer = () => {
               theme={"transparent"}
               onClick={() => toggleModal()}
             />
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
       <div className="max-w-[1350px]  w-[90%] 2xl:w-full m-auto flex flex-wrap">
         <motion.div

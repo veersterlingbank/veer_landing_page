@@ -8,7 +8,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useModal } from "layouts/MainLayout";
 
 import { motion } from "framer-motion";
-import { fadeIn } from "variants.js";
+// import { fadeIn } from "variants.js";
 
 const Header = () => {
   const { toggleMenu } = useModal();
@@ -51,10 +51,10 @@ const Header = () => {
 
   return (
     <motion.div
-      variants={fadeIn("up", 0.2)}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{ once: true, amount: 0.7 }}
+      // variants={fadeIn("up", 0.2)}
+      // initial="hidden"
+      // whileInView={"show"}
+      // viewport={{ once: true, amount: 0.7 }}
       className="absolute w-full py-[20px]"
     >
       <div
