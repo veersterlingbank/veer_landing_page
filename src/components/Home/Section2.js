@@ -42,14 +42,14 @@ const Section2 = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.7 }}
-        className="w-full md:w-[97%] px-[1rem] xl:px-[5rem] md:px-[3rem] py-[7rem] lg:mt-[-3rem]"
-        style={{
-          height: "100%",
-          // width: "97%",
-          backgroundImage: `url(${TopBg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
+        className="w-full md:w-[97%] px-[1rem] xl:px-[5rem] md:px-[3rem] py-[4rem] lg:mt-[-3rem] bg-brand_secondary rounded-tr-[100px]"
+        // style={{
+        //   height: "100%",
+        //   // width: "97%",
+        //   backgroundImage: `url(${TopBg})`,
+        //   backgroundSize: "cover",
+        //   backgroundRepeat: "no-repeat",
+        // }}
       >
         <div className="max-w-[1350px] m-auto">
           <h3 className="text-28 xl:text-32 font-qanelas_b w-full xl:w-[70%] leading-[40px] md:leading-[44px] mb-8">

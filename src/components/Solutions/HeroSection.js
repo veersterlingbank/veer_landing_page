@@ -57,7 +57,7 @@ const HeroSection = () => {
             alt="An Happy Driver"
           />
           <motion.img
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
@@ -66,7 +66,7 @@ const HeroSection = () => {
             alt="Driver Training Courses"
           />
           <motion.img
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}

@@ -2,7 +2,7 @@ import HeroBG from "assets/images/hero-image.webp";
 import HeroImgA from "assets/images/home-hero-a.webp";
 import HeroImgB from "assets/images/home-hero-b.webp";
 import HeroImgC from "assets/images/home-hero-c.webp";
-import HeroImgD from "assets/images/home-hero-d.webp";
+import HeroImgD from "assets/images/home-hero-d.png";
 import Button from "components/Inputs/Button";
 import { useModal } from "layouts/MainLayout";
 
@@ -69,25 +69,35 @@ const HeroSection = () => {
             src={HeroImgA}
             alt="An Happy Driver"
           />
-          <motion.div
-            variants={fadeIn("up", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.7 }}
-            className="px-[30px] lg:px-0 w-[100%] md:w-[60%] absolute top-[70%] md:top-[30%] lg:top-[40%] left-[0] md:left-[-10%] lg:left-[-35%]"
-          >
-            <img className="" src={HeroImgB} alt="Driver Progress Tracking" />
-            <img
+          <div className="px-[30px] lg:px-0 w-[100%] md:w-[60%] absolute top-[60%] md:top-[30%] lg:top-[40%] left-[0] md:left-[-10%] lg:left-[-35%]">
+            <motion.img
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.7 }}
+              className=""
+              src={HeroImgB}
+              alt="Driver Progress Tracking"
+            />
+            <motion.img
+              variants={fadeIn("up", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.7 }}
               className="mt-2"
               src={HeroImgC}
               alt="Overall Performance Score"
             />
-            <img
+            <motion.img
+              // variants={fadeIn("up", 0.4)}
+              // initial="hidden"
+              // whileInView={"show"}
+              // viewport={{ once: true, amount: 0.7 }}
               className="mt-2 md:block"
               src={HeroImgD}
               alt="Traffic Laws and Regulations"
             />
-          </motion.div>
+          </div>
         </div>
       </div>
       {/* <div className="h-full max-w-[1350px] m-auto flex flex-col items-center justify-center">
