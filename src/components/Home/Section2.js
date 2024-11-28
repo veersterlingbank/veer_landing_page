@@ -39,11 +39,7 @@ const Section2 = () => {
   ];
   return (
     <div className="relative z-20">
-      <motion.div
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: true, amount: 0.7 }}
+      <div
         className="w-full md:w-[97%] px-[1rem] xl:px-[5rem] md:px-[3rem] py-[4rem] lg:mt-[-3rem] bg-brand_secondary rounded-tr-[100px]"
         // style={{
         //   height: "100%",
@@ -54,21 +50,34 @@ const Section2 = () => {
         // }}
       >
         <div className="max-w-[1350px] m-auto">
-          <h3 className="text-28 xl:text-32 font-qanelas_b w-full xl:w-[70%] leading-[40px] md:leading-[44px] mb-8">
+          <motion.h3
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="text-28 xl:text-32 font-qanelas_b w-full xl:w-[70%] leading-[40px] md:leading-[44px] mb-8"
+          >
             Our company aims to enhance driver safety and efficiency with
             immersive, risk-free training. Our platform empowers commercial
             drivers to sharpen their skills in a controlled environment,
             ensuring top performance on every journey.
-          </h3>
-          <Button
-            name={"Learn more"}
-            theme={"transparent"}
-            onClick={() => {
-              navigate("/about-us");
-            }}
-          />
+          </motion.h3>
+          <motion.div
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+          >
+            <Button
+              name={"Learn more"}
+              theme={"transparent"}
+              onClick={() => {
+                navigate("/about-us");
+              }}
+            />
+          </motion.div>
         </div>
-      </motion.div>
+      </div>
       <div className="max-w-[1350px] m-auto md:flex justify-between mt-[5rem]">
         <motion.div
           // variants={fadeIn("right", 0.2)}
@@ -99,7 +108,7 @@ const Section2 = () => {
         <div className="md:basis-[65%] xl:basis-[60%] md:flex justify-between flex-wrap px-[1rem] py-[3rem] md:p-[3rem]">
           {services.map((item, index) => (
             <motion.div
-              variants={fadeIn("up", 0.2)}
+              variants={fadeIn("up", 0.2 + index * 0.1)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
