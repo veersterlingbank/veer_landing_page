@@ -7,8 +7,10 @@ import Button from "components/Inputs/Button";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
+import { useNavigate } from "react-router-dom";
 
 const Section2 = () => {
+  const navigate = useNavigate();
   const services = [
     {
       icon: <Service1 />,
@@ -58,15 +60,21 @@ const Section2 = () => {
             drivers to sharpen their skills in a controlled environment,
             ensuring top performance on every journey.
           </h3>
-          <Button name={"Learn more"} theme={"transparent"} />
+          <Button
+            name={"Learn more"}
+            theme={"transparent"}
+            onClick={() => {
+              navigate("/about-us");
+            }}
+          />
         </div>
       </motion.div>
       <div className="max-w-[1350px] m-auto md:flex justify-between mt-[5rem]">
         <motion.div
-          variants={fadeIn("right", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
+          // variants={fadeIn("right", 0.2)}
+          // initial="hidden"
+          // whileInView={"show"}
+          // viewport={{ once: true, amount: 0.7 }}
           className="basis-[30%] px-[1rem] md:pl-[3rem] 2xl:p-0 mb-[3rem] md:m-0"
         >
           <p className="text-light_brand_primary font-qanelas_m">
@@ -83,6 +91,9 @@ const Section2 = () => {
             name={"Learn more"}
             theme={"transparent"}
             className={"border-[#191C24] text-[#191C24]"}
+            onClick={() => {
+              navigate("/solutions");
+            }}
           />
         </motion.div>
         <div className="md:basis-[65%] xl:basis-[60%] md:flex justify-between flex-wrap px-[1rem] py-[3rem] md:p-[3rem]">

@@ -102,6 +102,18 @@ const Section6 = () => {
       image: Step6,
     },
   ];
+    const onSlideChanged = ({ currentSlide, slidesToShow, totalItems }) => {
+      // const totalItems = stepsMobile.length;
+      const lastSlideIndex = Math.ceil(totalItems / slidesToShow) - 1;
+      console.log(totalItems);
+      console.log(slidesToShow);
+      console.log(currentSlide);
+      console.log(lastSlideIndex);
+
+      if (currentSlide + 1 === slidesToShow) {
+        console.log("You are on the last slide!");
+      }
+    };
     const CustomButtonGroupAsArrows = ({
       next,
       previous,
@@ -208,6 +220,10 @@ const Section6 = () => {
               additionalTransfrom={0}
               arrows={false}
               autoPlaySpeed={3000}
+              afterChange={(previousSlide, state) => {
+                const { currentSlide, slidesToShow, totalItems } = state; // State object
+                onSlideChanged({ currentSlide, slidesToShow, totalItems });
+              }}
               centerMode={false}
               className=""
               containerClass="container-padding-bottom"

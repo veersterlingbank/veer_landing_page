@@ -32,7 +32,7 @@ const ScheduleDemo = () => {
   };
   return (
     <div className="bg-[#00000046] h-[100vh] w-[100vw] fixed top-0 left-0 z-20">
-      <div className="py-[3rem] lg:py-[5rem] px-[2rem] lg:px-[8rem] h-[100vh] w-full lg:w-[70%] bg-white absolute right-0">
+      <div className="py-[3rem] xl:py-[5rem] px-[3rem] xl:px-[8rem] h-[100vh] w-full md:w-[70%] bg-white absolute right-0">
         <div className="lg:flex lg:space-x-[4rem]">
           <div className="">
             <Button
@@ -47,7 +47,7 @@ const ScheduleDemo = () => {
               onClick={() => closeModal()}
             />
           </div>
-          <div className="h-[80vh] lg:h-[85vh] mt-[3rem] pb-[4rem] overflow-y-auto">
+          <div className="h-[80vh] lg:h-[85vh] mt-[3rem] pb-[6rem] overflow-y-auto">
             <h3 className="text-32 font-qanelas_b w-full lg:w-[70%] text-[#0D0E13] leading-[40px] mb-2">
               Let us show you the future of drivers management.
             </h3>
@@ -56,7 +56,7 @@ const ScheduleDemo = () => {
             </p>
 
             <form action="">
-              <div className="lg:flex justify-between ">
+              <div className="md:flex justify-between ">
                 <div className="basis-[47%]">
                   <Input
                     label="First Name"
@@ -69,7 +69,7 @@ const ScheduleDemo = () => {
                     showError={false}
                   />
                 </div>
-                <div className="lg:basis-[47%]">
+                <div className="basis-[47%]">
                   <Input
                     label="Last Name"
                     type="text"
@@ -82,7 +82,7 @@ const ScheduleDemo = () => {
                   />
                 </div>
               </div>
-              <div className="lg:first:flex justify-between ">
+              <div className="md:flex justify-between ">
                 <div className="basis-[47%]">
                   <Input
                     label="Email address"
@@ -120,15 +120,15 @@ const ScheduleDemo = () => {
                   showError={false}
                 />
               </div>
-              <div className="lg:flex justify-between ">
+              <div className="md:flex justify-between ">
                 <div className="basis-[47%]">
                   <Input
                     label="Company size"
-                    type=""
-                    id="companyName"
-                    name="companyName"
+                    type="number"
+                    id="companySize"
+                    name="companySize"
                     readOnly={loading}
-                    value={formData?.companyName}
+                    value={formData?.companySize}
                     onChange={handleChange}
                     showError={false}
                   />
@@ -137,10 +137,10 @@ const ScheduleDemo = () => {
                   <Input
                     label="Role/Position"
                     type="text"
-                    id="companyName"
-                    name="companyName"
+                    id="role"
+                    name="role"
                     readOnly={loading}
-                    value={formData?.companyName}
+                    value={formData?.role}
                     onChange={handleChange}
                     showError={false}
                   />

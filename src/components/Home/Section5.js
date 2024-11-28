@@ -26,8 +26,8 @@ const Section5 = () => {
               viewport={{ once: true, amount: 0.7 }}
               className="text-[56px] leading-[69px] font-qanelas_b"
             >
-              From Accidents to <br />
-              Excellence
+              Safer Roads Powered <br />
+              by Technology
             </motion.h3>
             <motion.div
               variants={fadeIn("left", 0.2)}
@@ -67,8 +67,8 @@ const Section5 = () => {
               viewport={{ once: true, amount: 0.7 }}
               className="text-[32px] leading-[39px] font-qanelas_b"
             >
-              From Accidents to <br />
-              Excellence
+              Safer Roads Powered <br />
+              by Technology
             </motion.h3>
             <motion.div
               variants={fadeIn("left", 0.2)}
