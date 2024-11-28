@@ -6,6 +6,7 @@ import Checkbox from "./Inputs/CheckBox";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useModal } from "layouts/MainLayout";
+import { DefaultDatepicker } from "./Inputs/DefaultDatepicker";
 
 const ScheduleDemo = () => {
   const [formData, setFormData] = useState({
@@ -29,6 +30,11 @@ const ScheduleDemo = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const submit = (e) => {
+    e.preventDefault();
+    console.log(formData);
   };
   return (
     <div className="bg-[#00000046] h-[100vh] w-[100vw] fixed top-0 left-0 z-20">
@@ -55,7 +61,7 @@ const ScheduleDemo = () => {
               Schedule your personalized demo today.
             </p>
 
-            <form action="">
+            <form onSubmit={submit}>
               <div className="md:flex justify-between ">
                 <div className="basis-[47%]">
                   <Input
@@ -146,6 +152,34 @@ const ScheduleDemo = () => {
                   />
                 </div>
               </div>
+              <div className="md:flex justify-between ">
+                <div className="basis-[47%]">
+                  <DefaultDatepicker
+                    label="Preferred demo date"
+                    containerVariant=""
+                    minDate={new Date()}
+                    maxDate={new Date("2030-12-31")}
+                    onSelect={(e) => setFormData({ ...formData, demoDate: e })}
+                    name="date"
+                    startDate={formData.demoDate}
+                    showCalender={true}
+                  />
+                </div>
+                <div className="basis-[47%]">
+                  <DefaultDatepicker
+                    label="Preferred demo time"
+                    showTimeSelectOnly={true}
+                    dateFormat="h:mm aa"
+                    showTimeSelect={true}
+                    timeCaption="Select Start time"
+                    onSelect={(e) => setFormData({ ...formData, demoTime: e })}
+                    name="startTime"
+                    value={formData.demoTime}
+                    timeIntervals={30}
+                    showTimeIcon={true}
+                  />
+                </div>
+              </div>
               <div className="">
                 <TextArea
                   label="Additional note (optional)"
@@ -193,7 +227,12 @@ const ScheduleDemo = () => {
                   }
                 />
               </div>
-              <Button name={"Submit"} theme={"primary"} className={"w-full"} />
+              <Button
+                name={"Submit"}
+                theme={"primary"}
+                className={"w-full"}
+                // onClick={() => submit()}
+              />
             </form>
           </div>
         </div>
