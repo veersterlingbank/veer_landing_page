@@ -76,14 +76,14 @@ const Section4 = () => {
 
   return (
     <div className="bg-[#12131A]">
-      <div className="hidden xl:block max-w-[1350px] w-[90%] 2xl:w-full m-auto pb-[8rem]">
+      <div className="hidden lg:block max-w-[1350px] w-[90%] 2xl:w-full m-auto pb-[8rem]">
         <div className="flex gap-[10%] pt-[7rem]">
           <motion.div
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
-            className="basis-[40%]"
+            className="basis-[75%] xl:basis-[40%]"
           >
             <p className="text-light_brand_primary font-qanelas_m">WHY VEER?</p>
             <h3 className="font-qanelas_b text-[36px] leading-[44px] mt-[3rem] mb-[1.5rem]">
@@ -124,7 +124,7 @@ const Section4 = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
-            className="basis-[40%]"
+            className="basis-[75%] xl:basis-[40%]"
           >
             <h3 className="font-qanelas_b text-[36px] leading-[44px] mt-[4rem] mb-[1.5rem]">
               Driver Behaviour <br />
@@ -144,7 +144,7 @@ const Section4 = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
-            className="basis-[40%]"
+            className="basis-[75%] xl:basis-[40%]"
           >
             <h3 className="font-qanelas_b text-[36px] leading-[44px] mt-[4rem] mb-[1.5rem]">
               Customise Training <br />
@@ -168,7 +168,7 @@ const Section4 = () => {
           </motion.div>
         </div>
       </div>
-      <div className="xl:hidden pt-[4rem] pb-[3rem] md:px-[1rem] relative">
+      <div className="lg:hidden pt-[4rem] pb-[3rem] md:px-[1rem] relative">
         <div className="flex px-[1rem]">
           <p className="text-light_brand_primary font-qanelas_m">WHY VEER?</p>
           {/* <CustomButtonGroupAsArrows /> */}

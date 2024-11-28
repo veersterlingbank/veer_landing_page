@@ -161,7 +161,7 @@ const Section6 = () => {
       </motion.div>
       <div className="lg:flex flex-col items-end">
         <div className="bg-white rounded-tl-[50px] pt-[4rem] lg:w-[90%] relative">
-          <div className="hidden xl:block max-w-[1350px] m-auto pl-[3rem]">
+          {/* <div className="hidden xl:block max-w-[1350px] m-auto pl-[3rem]">
             <div className="border-b border-b-[#DEDEDE] mb-[3rem] flex justify-between">
               {stepsTop.map((item, index) => (
                 <motion.div
@@ -202,8 +202,8 @@ const Section6 = () => {
                 </motion.div>
               ))}
             </div>
-          </div>
-          <div className="xl:hidden pb-[2rem]">
+          </div> */}
+          <div className="pb-[2rem]">
             <Carousel
               additionalTransfrom={0}
               arrows={false}

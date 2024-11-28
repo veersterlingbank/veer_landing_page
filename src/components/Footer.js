@@ -102,9 +102,7 @@ const Footer = () => {
           // paddingLeft: "6rem",
         }}
       >
-        <div
-          className="max-w-[1350px] m-auto lg:flex justify-between p-[2rem] 2xl:p-[3rem]"
-        >
+        <div className="max-w-[1350px] m-auto md:flex justify-between p-[2rem] 2xl:p-[3rem]">
           <motion.div
             variants={fadeIn("right", 0.4)}
             initial="hidden"
