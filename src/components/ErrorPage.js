@@ -9,10 +9,10 @@ import Header from "components/Header";
 const ErrorPage = () => {
   const navigate = useNavigate()
   return (
-    <div className="bg-[#040F12] h-[100vh]">
+    <div className="bg-[#040F12] min-h-[100vh]">
       {/* <Header /> */}
-      <div className="max-w-[1350px] m-auto pt-[10rem] xl:pt-[13rem] flex justify-between">
-        <div className="md:pt-[3rem] mx-auto mb-[4rem] md:m-0 basis-[45%]">
+      <div className="max-w-[1350px] md:w-[90%] 2xl:w-full m-auto pt-[5rem] xl:pt-[13rem] md:flex justify-between">
+        <div className="md:pt-[3rem] mx-auto w-[90%] md:w-full mb-[4rem] md:m-0 basis-[45%]">
           <motion.h1
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -46,13 +46,13 @@ const ErrorPage = () => {
             />
           </motion.div>
         </div>
-        <div className="basis-[45%] pt-[15rem]">
+        <div className="basis-[45%] pt-[3rem] md:pt-[15rem]">
           <motion.img
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
             src={ErrorImg}
-            className="w-[80%] "
+            className=""
             alt="404 img"
           />
         </div>
