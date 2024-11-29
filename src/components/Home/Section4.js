@@ -97,7 +97,7 @@ const Section4 = () => {
             </p>
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.2)}
+            variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
@@ -120,7 +120,7 @@ const Section4 = () => {
             />
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.2)}
+            variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
@@ -158,7 +158,7 @@ const Section4 = () => {
             </p>
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.2)}
+            variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}

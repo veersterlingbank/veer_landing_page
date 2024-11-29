@@ -30,7 +30,7 @@ const Section5 = () => {
               by Technology
             </motion.h3>
             <motion.div
-              variants={fadeIn("left", 0.2)}
+              variants={fadeIn("right", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
@@ -71,7 +71,7 @@ const Section5 = () => {
               by Technology
             </motion.h3>
             <motion.div
-              variants={fadeIn("left", 0.2)}
+              variants={fadeIn("right", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}

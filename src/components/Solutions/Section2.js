@@ -13,6 +13,7 @@ const Section2 = () => {
           width: "100%",
           backgroundImage: `url(${SectionBG})`,
           backgroundSize: "cover",
+          backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
@@ -30,7 +31,7 @@ const Section2 = () => {
               performance
             </motion.h3>
             <motion.div
-              variants={fadeIn("left", 0.2)}
+              variants={fadeIn("right", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
@@ -55,6 +56,7 @@ const Section2 = () => {
           width: "100%",
           backgroundImage: `url(${SectionBG})`,
           backgroundSize: "cover",
+          backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
@@ -72,7 +74,7 @@ const Section2 = () => {
               performance
             </motion.h3>
             <motion.div
-              variants={fadeIn("left", 0.2)}
+              variants={fadeIn("right", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}

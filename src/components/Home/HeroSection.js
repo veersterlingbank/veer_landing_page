@@ -61,7 +61,7 @@ const HeroSection = () => {
         </div>
         <div className="relative z-10 basis-[45%] px-[20px] lg:px-0">
           <motion.img
-            variants={fadeIn("left", 0.2)}
+            variants={fadeIn("down", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
