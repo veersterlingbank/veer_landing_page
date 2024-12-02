@@ -47,6 +47,7 @@ const Header = () => {
     pathname.toLowerCase().includes("faq") ||
     pathname.toLowerCase().includes("contact-us") ||
     pathname.toLowerCase().includes("solutions") ||
+    pathname.toLowerCase().includes("terms-conditions") ||
     pathname.toLowerCase().includes("cookies-policy") ||
     pathname.toLowerCase().includes("privacy-policy");
 

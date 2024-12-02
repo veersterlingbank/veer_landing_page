@@ -55,8 +55,7 @@ const Footer = () => {
     },
     {
       name: "Terms & conditions",
-      link: "#",
-      // link: "/terms-conditions",
+      link: "/terms-conditions",
     },
   ];
 
