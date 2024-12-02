@@ -51,8 +51,7 @@ const Footer = () => {
     },
     {
       name: "Cookies policy",
-      link: "#",
-      // link: "/cookies-policy",
+      link: "/cookies-policy",
     },
     {
       name: "Terms & conditions",

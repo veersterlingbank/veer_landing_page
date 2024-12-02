@@ -3,136 +3,153 @@ const CookiesPolicy = () => {
     <div className="bg-gradient-to-b from-[#FFEDED] to-[#FFFFFF]">
       <div className="max-w-[1350px] w-[90%] xl:w-[55%] m-auto pt-[10rem] xl:pt-[13rem] pb-[5rem]">
         <h1 className="font-qanelas_b text-[36px] lg:text-[56px] leading-[43px] lg:leading-[69px] text-[#0D0E13]">
-          Privacy Policy
+          Cookies Policy
         </h1>
         <div className="mt-[2rem] xl:mt-[4rem]">
           <div className="mb-[30px]">
-            <h4 className="font-qanelas_b text-[#0D0E13]">Responsibility</h4>
             <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              The Investor Relations (IR) Unit, under the Strategic Planning
-              Group of Sterling Bank, is responsible for implementing this
-              policy.
-            </p>
-            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              Only designated spokespersons and the IR unit are allowed to
-              communicate with the investment community and external parties on
-              behalf of Sterling Bank.
+              VEER ("we," "us," "our") values your privacy and is committed to
+              protecting your personal information. This Cookies Policy explains
+              how we use cookies and similar technologies on our website and
+              digital platforms. By continuing to use our website, you agree to
+              the use of cookies as described in this policy.
             </p>
           </div>
+
           <div className="mb-[30px]">
-            <h4 className="font-qanelas_b text-[#0D0E13]">Objective</h4>
-            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              The goal of Sterling Bank’s IR unit is to ensure that the
-              investment community has a clear understanding of the Bank’s
-              strategy, business model, competitive position and financial
-              performance through transparent communications.
-            </p>
-            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              Sterling Bank maintains a policy of informing the investment
-              community of its business circumstances in accordance with the
-              legal requirements guiding companies and financial institutions in
-              Nigeria as well as global best practices.
-            </p>
-            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              Sterling Bank places a high priority on the quality and
-              consistency of the investor-relevant information it discloses.
-            </p>
-          </div>
-          <div className="mb-[30px]">
-            <h4 className="font-qanelas_b text-[#0D0E13]">
-              Investor Relation Information Policy
+            <h4 className="font-qanelas_b text-[#0D0E13] text-[20px]">
+              What are Cookies?
             </h4>
             <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              Sterling Bank may occasionally host conference calls after the
-              release of financial results or other material events.
+              Cookies are small text files placed on your device (computer,
+              tablet, or smartphone) when you visit a website. Cookies allow the
+              website to recognize your device, store preferences, and enhance
+              your browsing experience.
+            </p>
+          </div>
+
+          <div className="mb-[30px]">
+            <h4 className="font-qanelas_b text-[#0D0E13] text-[20px]">
+              Types of Cookies We Use
+            </h4>
+            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
+              We use the following types of cookies on our platform:
             </p>
             <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              A notice will be posted on the News section of the investor
-              relations website prior to such events and interested participants
-              allowed to register. Transcripts of these meetings will be made
-              available on the site a few days after such calls.
+              <span className="font-qanelas_b text-[#0D0E13]">
+                Essential Cookies:{" "}
+              </span>
+              These cookies are necessary for the website to function correctly.
+              They enable core functionalities like security, network
+              management, and accessibility.
+            </p>
+            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
+              <span className="font-qanelas_b text-[#0D0E13]">
+                Performance Cookies:{" "}
+              </span>
+              These cookies collect information about how visitors use our
+              website, such as which pages are most visited and if any errors
+              occur. The data helps us improve our website's performance and
+              user experience.
+            </p>
+            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
+              <span className="font-qanelas_b text-[#0D0E13]">
+                Functional Cookies:{" "}
+              </span>
+              These cookies remember your preferences and choices (e.g.,
+              language or region settings) to provide a more personalized
+              experience.
+            </p>
+            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
+              <span className="font-qanelas_b text-[#0D0E13]">
+                Targeting and Advertising Cookies:{" "}
+              </span>
+              These cookies are used to deliver content relevant to you and your
+              interests. They may also limit the number of times you see an ad
+              and help measure the effectiveness of marketing campaigns.
+            </p>
+            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
+              <span className="font-qanelas_b text-[#0D0E13]">
+                Analytics Cookies:{" "}
+              </span>
+              We use these cookies to collect aggregated data about website
+              usage, helping us analyze user behavior and make improvements to
+              our services.
             </p>
           </div>
           <div className="mb-[30px]">
-            <h4 className="font-qanelas_b text-[#0D0E13]">
-              Access to Investor Relations Information
+            <h4 className="font-qanelas_b text-[#0D0E13] text-[20px]">
+              Third-Party Cookies
             </h4>
             <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              <span className="font-qanelas_b text-[#0D0E13]">
-                1. Internet:{" "}
-              </span>
-              Sterling Bank publishes information on its investor relations
-              website at Investor Relations so that it is easily accessible to
-              all investors. The investor relations site contains both current
-              and archived information on Sterling Bank IR activities.
+              Some cookies on our website are set by third-party service
+              providers, such as analytics or advertising partners. These
+              cookies are governed by the respective third party's privacy
+              policies.
             </p>
             <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              <span className="font-qanelas_b text-[#0D0E13]">
-                2. Financial statements, stock exchange announcements and other
-                releases:{" "}
-              </span>
-              The presentation of financial information is made to the Nigerian
-              Stock Exchange before its publication in two national dailies and
-              the News section of Sterling Bank’s investor relations website.
+              Examples of third-party services we use include:
+            </p>
+            <div className="pt-[10px] pl-[25px]">
+              <ul className="list-disc">
+                <li className="font-qanelas_r text-[#0D0E13] pt-[5px]">
+                  Google Analytics
+                </li>
+                <li className="font-qanelas_r text-[#0D0E13] pt-[5px]">
+                  Social media platforms (e.g., Facebook, LinkedIn)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="mb-[30px]">
+            <h4 className="font-qanelas_b text-[#0D0E13] text-[20px]">
+              How to Manage Cookies
+            </h4>
+            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
+              You can manage or disable cookies in your browser settings. Note
+              that blocking some cookies may affect the functionality of our
+              website.
             </p>
             <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              Sterling Bank also provides explanatory commentary in an earnings
-              release and presentation, which are available on its website after
-              the report to the Nigerian Stock Exchange.
+              Steps to Manage Cookies:
             </p>
             <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              <span className="font-qanelas_b text-[#0D0E13]">
-                3. Conference calls, webcasts and press conferences:{" "}
-              </span>
-              Sterling Bank may occasionally host conference calls after the
-              release of financial results or other material events.
+              Check your browser’s help section for instructions on adjusting
+              cookie settings.
             </p>
             <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              A notice will be posted on the News section of the investor
-              relations website prior to such events and interested participants
-              allowed to register. Transcripts of these meetings will be made
-              available on the site a few days after such calls.
+              Visit www.aboutcookies.org for guidance on managing cookies across
+              various browsers.
+            </p>
+          </div>
+          <div className="mb-[30px]">
+            <h4 className="font-qanelas_b text-[#0D0E13] text-[20px]">
+              Changes to This Policy
+            </h4>
+            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
+              We may update this Cookies Policy from time to time to reflect
+              changes in our practices or for other operational, legal, or
+              regulatory reasons. We encourage you to review this policy
+              periodically.
+            </p>
+          </div>
+          <div className="mb-[30px]">
+            <h4 className="font-qanelas_b text-[#0D0E13] text-[20px]">
+              Contact Us
+            </h4>
+            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
+              If you have any questions or concerns about our use of cookies,
+              please contact us at:
             </p>
             <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              <span className="font-qanelas_b text-[#0D0E13]">
-                4. External conferences and presentations:{" "}
-              </span>
-              Speeches and other presentations delivered by Sterling Bank
-              executives at investor-related conferences, roadshows, and
-              investor meetings will be made available on the IR website as soon
-              as possible after the event.
+              Email: info@veer.ng or mobility@sterling.ng
             </p>
-            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              <span className="font-qanelas_b text-[#0D0E13]">
-                5. Road shows and other capital markets events arranged by
-                Sterling Bank:{" "}
-              </span>
-              Sterling Bank may occasionally hold meetings with the investment
-              community. Shareholders, analysts, non-shareholding investors and
-              the financial press are invited to attend these events. A notice
-              of forthcoming events will be uploaded on the investor relations
-              site. All speeches and presentations delivered at these events
-              will be made available on the investor relations section as soon
-              as possible after the event.
+            <p className="font-qanelas_r text-[#0D0E13] pt-[5px]">
+              Address: 20, Marina, Lagos.
             </p>
-            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              <span className="font-qanelas_b text-[#0D0E13]">
-                6. Day-to-day contact:{" "}
-              </span>
-              Sterling Bank’s investor relations unit is responsible for
-              maintaining contact with investors and analysts by telephone and
-              e-mail. In all communications, no undisclosed material information
-              will be given in private communications.
-            </p>
-            <p className="font-qanelas_r text-[#0D0E13] pt-[10px]">
-              <span className="font-qanelas_b text-[#0D0E13]">
-                7. Annual general meeting:{" "}
-              </span>
-              Sterling Bank’s annual general meeting is the single most
-              important shareholder event on the investor relations calendar. A
-              report of the AGM will be available on the Investor Reports page
-              of the Sterling Bank IR website as soon as possible after the
-              event.
+            <p className="font-qanelas_r text-[#0D0E13] pt-[40px]">
+              By using our website, you acknowledge that you have read and
+              understood this Cookies Policy.
             </p>
           </div>
         </div>
