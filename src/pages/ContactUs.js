@@ -2,12 +2,15 @@ import Button from "components/Inputs/Button";
 import CheckBox from "components/Inputs/CheckBox";
 import Input from "components/Inputs/Input";
 import TextArea from "components/Inputs/TextArea";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",

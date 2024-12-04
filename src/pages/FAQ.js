@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ReactComponent as ArrowUp } from "assets/icons/faq-arrow-up.svg";
 import { ReactComponent as ArrowDown } from "assets/icons/faq-arrow-down.svg";
 
@@ -6,6 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { fadeIn } from "variants.js";
 
 const FAQ = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const faqs = [
     {
       question: "What types of vehicles are simulated in VEER's training?",

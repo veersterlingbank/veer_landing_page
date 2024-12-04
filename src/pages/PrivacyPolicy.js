@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-gradient-to-b from-[#FFEDED] to-[#FFFFFF]">
       <div className="max-w-[1350px] w-[90%] xl:w-[55%] m-auto pt-[10rem] xl:pt-[13rem] pb-[5rem]">

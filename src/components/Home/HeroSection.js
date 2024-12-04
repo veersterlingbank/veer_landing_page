@@ -31,7 +31,7 @@ const HeroSection = () => {
             viewport={{ once: true, amount: 0.7 }}
             className="font-qanelas_b text-[36px] md:text-[46px] xl:text-[56px] leading-[44px] md:leading-[59px] xl:leading-[69px] text-white"
           >
-            Empower Your Drivers. Master Every Mile.
+            World-class Driver Training platform.
           </motion.h1>
           <motion.p
             variants={fadeIn("right", 0.3)}
@@ -40,10 +40,9 @@ const HeroSection = () => {
             viewport={{ once: true, amount: 0.7 }}
             className="text-white font-qanelas_m lg:w-[70%] w-full mt-[1rem] mb-[3rem]"
           >
-            Revolutionize driver training with digital learning solutions,
-            cutting-edge simulators, real time driver behaviour tracking, and
-            automated certification — driving safer, smarter, and compliant
-            fleets.
+            Revolutionizing driver training through digital learning solutions,
+            cutting-edge simulators, real-time driver behaviour tracking, and
+            automated driver certifications to create safer roads for all.
           </motion.p>
           <motion.div
             variants={fadeIn("right", 0.4)}
