@@ -104,11 +104,11 @@ const Section6 = () => {
   ];
     const onSlideChanged = ({ currentSlide, slidesToShow, totalItems }) => {
       // const totalItems = stepsMobile.length;
-      const lastSlideIndex = Math.ceil(totalItems / slidesToShow) - 1;
-      console.log(totalItems);
-      console.log(slidesToShow);
-      console.log(currentSlide);
-      console.log(lastSlideIndex);
+      // const lastSlideIndex = Math.ceil(totalItems / slidesToShow) - 1;
+      // console.log(totalItems);
+      // console.log(slidesToShow);
+      // console.log(currentSlide);
+      // console.log(lastSlideIndex);
 
       if (currentSlide + 1 === slidesToShow) {
         console.log("You are on the last slide!");
@@ -219,7 +219,8 @@ const Section6 = () => {
             <Carousel
               additionalTransfrom={0}
               arrows={false}
-              autoPlaySpeed={3000}
+              autoPlay={true}
+              autoPlaySpeed={5000}
               afterChange={(previousSlide, state) => {
                 const { currentSlide, slidesToShow, totalItems } = state; // State object
                 onSlideChanged({ currentSlide, slidesToShow, totalItems });
@@ -231,7 +232,7 @@ const Section6 = () => {
               dotListClass="text-brand_primary"
               draggable
               focusOnSelect={false}
-              infinite={false}
+              infinite={true}
               itemClass=""
               keyBoardControl
               minimumTouchDrag={80}
