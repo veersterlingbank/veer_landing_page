@@ -1,12 +1,12 @@
 import LogoIcon from "assets/icons/logo-vector-color.svg";
-import { ReactComponent as Service1 } from "assets/icons/services-icon-1.svg";
-// import { ReactComponent as Service2 } from "assets/icons/services-icon-2.svg";
-// import { ReactComponent as Service3 } from "assets/icons/services-icon-3.svg";
-// import { ReactComponent as Service4 } from "assets/icons/services-icon-4.svg";
-import Value1 from "assets/images/about-sec-2-a.webp";
-import Value2 from "assets/images/about-sec-2-b.webp";
-import Value3 from "assets/images/about-sec-2-c.webp";
-import Value4 from "assets/images/about-sec-2-d.webp";
+import { ReactComponent as Solution1 } from "assets/icons/solution-icon-1.svg";
+import { ReactComponent as Solution2 } from "assets/icons/solution-icon-2.svg";
+import { ReactComponent as Solution3 } from "assets/icons/solution-icon-3.svg";
+import { ReactComponent as Solution4 } from "assets/icons/solution-icon-4.svg";
+import Value1 from "assets/images/solution-sec-2-a.webp";
+import Value2 from "assets/images/solution-sec-2-b.webp";
+import Value3 from "assets/images/solution-sec-2-c.webp";
+import Value4 from "assets/images/solution-sec-2-d.webp";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
@@ -14,7 +14,7 @@ import { fadeIn } from "variants.js";
 const Section3 = () => {
   const values = [
     {
-      icon: <Service1 />,
+      icon: <Solution1 />,
       title: "Driver Proficiency Test",
       content1:
         "Combine immersive simulator training with real-world inroad evaluations for a comprehensive driver assessment.",
@@ -23,8 +23,8 @@ const Section3 = () => {
       image: Value1,
     },
     {
-      icon: <Service1 />,
-      title: "LMS",
+      icon: <Solution2 />,
+      title: "Learning Management System",
       content1:
         "Our comprehensive driver development suite includes digital training with Veer LMS, immersive simulator sessions, and in-depth evaluations. Equip drivers with the skills and insights needed for safer, more efficient journeys.",
       content2:
@@ -32,7 +32,7 @@ const Section3 = () => {
       image: Value2,
     },
     {
-      icon: <Service1 />,
+      icon: <Solution3 />,
       title: "Veer simulators",
       content1:
         "This includes Digital driver training using Veer LMS, Simulator driver training, inroad Driver behaviour Tracking, Evaluation & Analytics.",
@@ -41,7 +41,7 @@ const Section3 = () => {
       image: Value3,
     },
     {
-      icon: <Service1 />,
+      icon: <Solution4 />,
       title: "Telemetry solutions",
       content1:
         "This includes Digital driver training using Veer LMS, Simulator driver training, inroad Driver behaviour Tracking, Evaluation & Analytics.",

@@ -21,6 +21,11 @@ const Button = ({
                     : ""
                 }
                 ${
+                  theme === "white" && !disabled
+                    ? "bg-white text-[#030D10]"
+                    : ""
+                }
+                ${
                   theme === "primary" && disabled
                     ? "bg-[#ff727498] text-white cursor-not-allowed"
                     : ""

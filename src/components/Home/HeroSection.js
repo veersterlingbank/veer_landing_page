@@ -52,8 +52,8 @@ const HeroSection = () => {
           >
             <Button
               name={"Schedule a demo"}
-              theme={"transparent"}
-              className={"border-white text-white"}
+              theme={"white"}
+              className={"font-qanelas_m"}
               onClick={() => toggleModal()}
             />
           </motion.div>
