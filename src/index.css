@@ -55,3 +55,23 @@ body {
   color: white;
   font-size: 16px;
 }
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
+  color: black;
+}
+
+
+@keyframes appear {
+	from {
+		opacity: 0;
+		scale: 0.5;
+	}
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+.animate_zoom {
+	animation: appear 2s linear;
+}

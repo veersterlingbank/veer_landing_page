@@ -12,6 +12,8 @@ import {
 } from "react";
 import { Outlet } from "react-router-dom";
 
+// import { motion, AnimatePresence } from "framer-motion";
+
 const ModalContext = createContext();
 
 export const useModal = () => useContext(ModalContext);
@@ -45,6 +47,29 @@ export default function MainLayout() {
     };
   }, [isModalOpen, isMenuOpen]);
 
+  const menuVariants = {
+    open: {
+      x: 0,
+      transition: {
+        stiffness: 20,
+        damping: 15,
+      },
+    },
+    close: {
+      x: "-100%",
+      transition: {
+        stiffness: 20,
+        damping: 15,
+      },
+    },
+  };
+
+  const style = {
+    animate: { y: 0, transition: { type: "spring", duration: 1 } },
+    initial: { y: -200 },
+    exit: { y: -200, transition: { type: "spring", duration: 1 } },
+  };
+
   return (
     <ModalContext.Provider
       value={{ toggleModal, closeModal, toggleMenu, closeMenu }}
@@ -56,6 +81,17 @@ export default function MainLayout() {
           <Footer />
           {isModalOpen && <ScheduleDemo />}
           {isMenuOpen && <MobileMenu />}
+          {/* <AnimatePresence>
+            {isMenuOpen && (
+              <motion.div
+                animate={style.animate}
+                initial={style.initial}
+                exit={style?.exit}
+              >
+                <MobileMenu />
+              </motion.div>
+            )}
+          </AnimatePresence> */}
         </Suspense>
       </div>
     </ModalContext.Provider>

@@ -6,6 +6,9 @@ import { ReactComponent as Prev } from "assets/icons/carousel-prev-arrow.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
+
 const Section4 = () => {
   const responsive = {
     superLargeDesktop: {
@@ -73,9 +76,15 @@ const Section4 = () => {
 
   return (
     <div className="bg-[#12131A]">
-      <div className="hidden xl:block max-w-[1350px] w-[90%] 2xl:w-full m-auto pb-[8rem]">
+      <div className="hidden lg:block max-w-[1350px] w-[90%] 2xl:w-full m-auto pb-[8rem]">
         <div className="flex gap-[10%] pt-[7rem]">
-          <div className="basis-[40%]">
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="basis-[75%] xl:basis-[40%]"
+          >
             <p className="text-light_brand_primary font-qanelas_m">WHY VEER?</p>
             <h3 className="font-qanelas_b text-[36px] leading-[44px] mt-[3rem] mb-[1.5rem]">
               Safe Learning <br />
@@ -86,19 +95,37 @@ const Section4 = () => {
               risk-free space for drivers to build real-world skills, tackling
               high-traffic and hazardous scenarios without exposure to danger.
             </p>
-          </div>
-          <div className="">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className=""
+          >
             <img src={ImageA} alt="A person using the driving simulator" />
-          </div>
+          </motion.div>
         </div>
         <div className="flex gap-[10%] pt-[7rem]">
-          <div className="">
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className=""
+          >
             <img
               src={ImageB}
               alt="Veer staffs tracking and analyzing driver's behaviour in real time"
             />
-          </div>
-          <div className="basis-[40%]">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="basis-[75%] xl:basis-[40%]"
+          >
             <h3 className="font-qanelas_b text-[36px] leading-[44px] mt-[4rem] mb-[1.5rem]">
               Driver Behaviour <br />
               Tracking
@@ -109,10 +136,16 @@ const Section4 = () => {
               and make data-driven decisions for lasting performance and reduced
               accidents.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="flex gap-[10%] pt-[7rem]">
-          <div className="basis-[40%]">
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="basis-[75%] xl:basis-[40%]"
+          >
             <h3 className="font-qanelas_b text-[36px] leading-[44px] mt-[4rem] mb-[1.5rem]">
               Customise Training <br />
               Schedule
@@ -123,13 +156,19 @@ const Section4 = () => {
               study. It supports all levels, from first-time drivers to seasoned
               professionals seeking advanced skills or certification.
             </p>
-          </div>
-          <div className="">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className=""
+          >
             <img src={ImageC} alt="A person using the Veer dashboard" />
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div className="xl:hidden pt-[4rem] pb-[3rem] md:px-[1rem] relative">
+      <div className="lg:hidden pt-[4rem] pb-[3rem] md:px-[1rem] relative">
         <div className="flex px-[1rem]">
           <p className="text-light_brand_primary font-qanelas_m">WHY VEER?</p>
           {/* <CustomButtonGroupAsArrows /> */}

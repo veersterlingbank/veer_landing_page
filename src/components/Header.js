@@ -7,6 +7,9 @@ import Button from "./Inputs/Button";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useModal } from "layouts/MainLayout";
 
+import { motion } from "framer-motion";
+// import { fadeIn } from "variants.js";
+
 const Header = () => {
   const { toggleMenu } = useModal();
   const menuOptions = [
@@ -44,10 +47,18 @@ const Header = () => {
     pathname.toLowerCase().includes("faq") ||
     pathname.toLowerCase().includes("contact-us") ||
     pathname.toLowerCase().includes("solutions") ||
+    pathname.toLowerCase().includes("terms-conditions") ||
+    pathname.toLowerCase().includes("cookies-policy") ||
     pathname.toLowerCase().includes("privacy-policy");
 
   return (
-    <div className="absolute w-full py-[20px]">
+    <motion.div
+      // variants={fadeIn("up", 0.2)}
+      // initial="hidden"
+      // whileInView={"show"}
+      // viewport={{ once: true, amount: 0.7 }}
+      className="absolute w-full py-[20px]"
+    >
       <div
         className={`flex justify-between items-center h-[60px] lg:h-[80px] max-w-[1350px] w-[90%] 2xl:w-full m-auto rounded-[50px] px-[2rem] ${
           lightTheme ? "bg-white" : "backdrop-blur-sm bg-white/10"
@@ -103,7 +114,7 @@ const Header = () => {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

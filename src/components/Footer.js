@@ -4,6 +4,9 @@ import Button from "./Inputs/Button";
 import { useNavigate } from "react-router-dom";
 import { useModal } from "layouts/MainLayout";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
+
 const Footer = () => {
   const navigate = useNavigate();
   const { toggleModal } = useModal();
@@ -99,13 +102,25 @@ const Footer = () => {
           // paddingLeft: "6rem",
         }}
       >
-        <div className="max-w-[1350px] m-auto lg:flex justify-between p-[2rem] 2xl:p-[3rem]">
-          <div className="basis-[47%]">
+        <div className="max-w-[1350px] m-auto md:flex justify-between p-[2rem] 2xl:p-[3rem]">
+          <motion.div
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="basis-[47%]"
+          >
             <h3 className="text-[45px] 2xl:text-[56px] font-qanelas_b leading-[55px] 2xl:leading-[69px] mb-8">
               Do you need more information?
             </h3>
-          </div>
-          <div className="basis-[40%]">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="basis-[40%]"
+          >
             <p className="font-qanelas_m w-full xl:w-[70%] mb-5">
               Ready to enhance driver performance and make the roads safer for
               everyone? Reach out to us today and take the first step!
@@ -115,11 +130,17 @@ const Footer = () => {
               theme={"transparent"}
               onClick={() => toggleModal()}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="max-w-[1350px]  w-[90%] 2xl:w-full m-auto flex flex-wrap">
-        <div className="basis-[47%] md:basis-[30%] lg:basis-[17%] mb-[3rem]">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="basis-[47%] md:basis-[30%] lg:basis-[17%] mb-[3rem]"
+        >
           <h6 className="text-[#94A3B8] text-[14px] mb-[15px]">MENU</h6>
           {menu.map((item, index) => (
             <p
@@ -132,8 +153,14 @@ const Footer = () => {
               {item.name}
             </p>
           ))}
-        </div>
-        <div className="basis-[47%] md:basis-[30%] lg:basis-[20%] mb-[3rem]">
+        </motion.div>
+        {/* <motion.div
+          variants={fadeIn("up", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="basis-[47%] md:basis-[30%] lg:basis-[20%] mb-[3rem]"
+        >
           <h6 className="text-[#94A3B8] text-[14px] mb-[15px]">ENTERPRISE</h6>
           {enterprise.map((item, index) => (
             <p
@@ -146,8 +173,14 @@ const Footer = () => {
               {item.name}
             </p>
           ))}
-        </div>
-        <div className="basis-[47%] md:basis-[30%] lg:basis-[20%] mb-[3rem]">
+        </motion.div> */}
+        <motion.div
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="basis-[47%] md:basis-[30%] lg:basis-[20%] mb-[3rem]"
+        >
           <h6 className="text-[#94A3B8] text-[14px] mb-[15px]">LEGAL</h6>
           {legal.map((item, index) => (
             <p
@@ -160,8 +193,14 @@ const Footer = () => {
               {item.name}
             </p>
           ))}
-        </div>
-        <div className="basis-[47%] md:basis-[30%] lg:basis-[20%] mb-[3rem]">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="basis-[47%] md:basis-[30%] lg:basis-[20%] mb-[3rem]"
+        >
           <h6 className="text-[#94A3B8] text-[14px] mb-[15px]">
             STAY IN TOUCH
           </h6>
@@ -170,8 +209,14 @@ const Footer = () => {
               {item.name}
             </p>
           ))}
-        </div>
-        <div className="basis-[100%] md:basis-[60%] lg:basis-[23%] mt-[2rem] md:m-0">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="basis-[100%] md:basis-[60%] lg:basis-[23%] mt-[2rem] md:m-0"
+        >
           <p className="text-[#94A3B8] text-[14px] mb-[15px]">
             Veers provides a comprehensive digital driver training platform
             utilising an LMS (Learning Management System), simulators, and
@@ -179,7 +224,7 @@ const Footer = () => {
             evaluation, and certification to improve the safety and efficiency
             of commercial motor vehicles.
           </p>
-        </div>
+        </motion.div>
       </div>
       <div className="h-[3rem] lg:h-[13rem]"></div>
     </div>

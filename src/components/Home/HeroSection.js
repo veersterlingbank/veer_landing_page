@@ -1,21 +1,105 @@
 import HeroBG from "assets/images/hero-image.webp";
+import HeroImgA from "assets/images/home-hero-a.webp";
+import HeroImgB from "assets/images/home-hero-b.webp";
+import HeroImgC from "assets/images/home-hero-c.webp";
+import HeroImgD from "assets/images/home-hero-d.png";
 import Button from "components/Inputs/Button";
 import { useModal } from "layouts/MainLayout";
+
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
 
 const HeroSection = () => {
   const { toggleModal } = useModal();
   return (
     <div
-      className="h-[100vh]"
+      className="md:h-[70vh] lg:h-[100vh] pb-[18rem] md:pb-[50rem]"
       style={{
-        height: "100%",
+        // height: "100%",
         width: "100%",
         backgroundImage: `url(${HeroBG})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="h-full max-w-[1350px] m-auto flex flex-col items-center justify-center">
+      <div className="max-w-[1350px] md:w-[90%] 2xl:w-full m-auto pt-[13rem] md:flex justify-between">
+        <div className="w-[90%] md:w-full mx-auto mb-[4rem] md:m-0 basis-[50%]">
+          <motion.h1
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="font-qanelas_b text-[36px] md:text-[46px] xl:text-[56px] leading-[44px] md:leading-[59px] xl:leading-[69px] text-white"
+          >
+            World-class Driver Training platform.
+          </motion.h1>
+          <motion.p
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="text-white font-qanelas_m lg:w-[70%] w-full mt-[1rem] mb-[3rem]"
+          >
+            Revolutionizing driver training through digital learning solutions,
+            cutting-edge simulators, real-time driver behaviour tracking, and
+            automated driver certifications to create safer roads for all.
+          </motion.p>
+          <motion.div
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+          >
+            <Button
+              name={"Schedule a demo"}
+              theme={"white"}
+              className={"font-qanelas_m"}
+              onClick={() => toggleModal()}
+            />
+          </motion.div>
+        </div>
+        <div className="relative z-10 basis-[45%] px-[20px] lg:px-0">
+          <motion.img
+            variants={fadeIn("down", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="rounded-lg"
+            src={HeroImgA}
+            alt="An Happy Driver"
+          />
+          <div className="px-[30px] lg:px-0 w-[100%] md:w-[60%] absolute top-[60%] md:top-[30%] lg:top-[40%] left-[0] md:left-[-10%] lg:left-[-35%]">
+            <motion.img
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.7 }}
+              className=""
+              src={HeroImgB}
+              alt="Driver Progress Tracking"
+            />
+            <motion.img
+              variants={fadeIn("up", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.7 }}
+              className="mt-2"
+              src={HeroImgC}
+              alt="Overall Performance Score"
+            />
+            <motion.img
+              // variants={fadeIn("up", 0.4)}
+              // initial="hidden"
+              // whileInView={"show"}
+              // viewport={{ once: true, amount: 0.7 }}
+              className="mt-2 md:block"
+              src={HeroImgD}
+              alt="Traffic Laws and Regulations"
+            />
+          </div>
+        </div>
+      </div>
+      {/* <div className="h-full max-w-[1350px] m-auto flex flex-col items-center justify-center">
         <div className="w-[80%] lg:w-[60%]">
           <h1 className="font-qanelas_b xl:font-qanelas_eb text-[56px] xl:text-[70px] leading-[69px] xl:leading-[90px]">
             Empower Your Drivers. Master Every Mile.
@@ -32,7 +116,7 @@ const HeroSection = () => {
             onClick={() => toggleModal()}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

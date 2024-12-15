@@ -26,7 +26,7 @@ const MobileMenu = () => {
     },
   ];
   return (
-    <div className="bg-white absolute top-0 left-0 w-full h-[100vh] p-[2rem]">
+    <div className="bg-white absolute top-0 left-0 w-full h-[100vh] p-[2rem] z-20">
       <div className="flex justify-between h-[60px] px-[1rem]">
         <LogoBlack
           className="w-[6.5rem] cursor-pointer"

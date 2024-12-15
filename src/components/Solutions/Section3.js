@@ -1,17 +1,20 @@
 import LogoIcon from "assets/icons/logo-vector-color.svg";
-import { ReactComponent as Service1 } from "assets/icons/services-icon-1.svg";
-// import { ReactComponent as Service2 } from "assets/icons/services-icon-2.svg";
-// import { ReactComponent as Service3 } from "assets/icons/services-icon-3.svg";
-// import { ReactComponent as Service4 } from "assets/icons/services-icon-4.svg";
-import Value1 from "assets/images/about-sec-2-a.webp";
-import Value2 from "assets/images/about-sec-2-b.webp";
-import Value3 from "assets/images/about-sec-2-c.webp";
-import Value4 from "assets/images/about-sec-2-d.webp";
+import { ReactComponent as Solution1 } from "assets/icons/solution-icon-1.svg";
+import { ReactComponent as Solution2 } from "assets/icons/solution-icon-2.svg";
+import { ReactComponent as Solution3 } from "assets/icons/solution-icon-3.svg";
+import { ReactComponent as Solution4 } from "assets/icons/solution-icon-4.svg";
+import Value1 from "assets/images/solution-sec-2-a.webp";
+import Value2 from "assets/images/solution-sec-2-b.webp";
+import Value3 from "assets/images/solution-sec-2-c.webp";
+import Value4 from "assets/images/solution-sec-2-d.webp";
+
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
 
 const Section3 = () => {
   const values = [
     {
-      icon: <Service1 />,
+      icon: <Solution1 />,
       title: "Driver Proficiency Test",
       content1:
         "Combine immersive simulator training with real-world inroad evaluations for a comprehensive driver assessment.",
@@ -20,8 +23,8 @@ const Section3 = () => {
       image: Value1,
     },
     {
-      icon: <Service1 />,
-      title: "LMS",
+      icon: <Solution2 />,
+      title: "Learning Management System",
       content1:
         "Our comprehensive driver development suite includes digital training with Veer LMS, immersive simulator sessions, and in-depth evaluations. Equip drivers with the skills and insights needed for safer, more efficient journeys.",
       content2:
@@ -29,7 +32,7 @@ const Section3 = () => {
       image: Value2,
     },
     {
-      icon: <Service1 />,
+      icon: <Solution3 />,
       title: "Veer simulators",
       content1:
         "This includes Digital driver training using Veer LMS, Simulator driver training, inroad Driver behaviour Tracking, Evaluation & Analytics.",
@@ -38,7 +41,7 @@ const Section3 = () => {
       image: Value3,
     },
     {
-      icon: <Service1 />,
+      icon: <Solution4 />,
       title: "Telemetry solutions",
       content1:
         "This includes Digital driver training using Veer LMS, Simulator driver training, inroad Driver behaviour Tracking, Evaluation & Analytics.",
@@ -59,7 +62,13 @@ const Section3 = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="max-w-[1350px] m-auto md:flex gap-[3rem] items-end mb-[3rem] px-[1rem] md:pl-[3rem] 2xl:p-0">
+      <motion.div
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.7 }}
+        className="max-w-[1350px] m-auto md:flex gap-[3rem] items-end mb-[3rem] px-[1rem] md:pl-[3rem] 2xl:p-0"
+      >
         <div className="md:basis-[47%] xl:basis-[30%]">
           <p className="text-light_brand_primary font-qanelas_m">
             OUR SOLUTIONS
@@ -74,9 +83,16 @@ const Section3 = () => {
             safety, boost operational efficiency, and foster skill development.
           </p>
         </div>
-      </div>
+      </motion.div>
       {values.map((item, index) => (
-        <div key={index} className="flex flex-col items-end">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          key={index}
+          className="flex flex-col items-end"
+        >
           <div className="bg-white rounded-tl-[50px] py-[4rem] px-[2rem] md:px-[4rem] lg:px-[2rem] 2xl:px-0 mb-[3rem] w-full lg:w-[90%]">
             <div className="max-w-[1350px] m-auto ">
               <div className="lg:flex justify-between items-center">
@@ -100,7 +116,7 @@ const Section3 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
