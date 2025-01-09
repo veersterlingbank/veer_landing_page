@@ -15,7 +15,7 @@ const SuccessModal = ({ setShowSuccessModal }) => {
     } else {
       setShowSuccessModal(false)
     }
-  }, [count]);
+  }, [count, setShowSuccessModal]);
 
   return (
     <motion.div

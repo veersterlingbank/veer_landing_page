@@ -29,20 +29,20 @@ const Footer = () => {
     },
   ];
 
-  const enterprise = [
-    {
-      name: "LMS for Driver Training",
-      link: "/lms-driver-training",
-    },
-    {
-      name: "Telemetry & Real-Time Tracking",
-      link: "/telemetry-real-time-tracking",
-    },
-    {
-      name: "Simulators",
-      link: "/simulators",
-    },
-  ];
+  // const enterprise = [
+  //   {
+  //     name: "LMS for Driver Training",
+  //     link: "/lms-driver-training",
+  //   },
+  //   {
+  //     name: "Telemetry & Real-Time Tracking",
+  //     link: "/telemetry-real-time-tracking",
+  //   },
+  //   {
+  //     name: "Simulators",
+  //     link: "/simulators",
+  //   },
+  // ];
 
   const legal = [
     {
