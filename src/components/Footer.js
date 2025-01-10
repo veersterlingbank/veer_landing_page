@@ -62,19 +62,19 @@ const Footer = () => {
   const inTouch = [
     {
       name: "Instagram",
-      link: "",
+      link: "https://www.instagram.com/drivewithveer",
     },
-    {
-      name: "Facebook",
-      link: "",
-    },
-    {
-      name: "LinkedIn",
-      link: "",
-    },
+    // {
+    //   name: "Facebook",
+    //   link: "",
+    // },
+    // {
+    //   name: "LinkedIn",
+    //   link: "",
+    // },
     {
       name: "X (Twitter)",
-      link: "",
+      link: "https://x.com/drivewithveer",
     },
   ];
 
@@ -205,9 +205,11 @@ const Footer = () => {
             STAY IN TOUCH
           </h6>
           {inTouch.map((item, index) => (
-            <p key={index} className="text-[14px] mb-[15px] cursor-pointer">
-              {item.name}
-            </p>
+            <a href={item.link} target="_blank" rel="noreferrer">
+              <p key={index} className="text-[14px] mb-[15px] cursor-pointer">
+                {item.name}
+              </p>
+            </a>
           ))}
         </motion.div>
         <motion.div
