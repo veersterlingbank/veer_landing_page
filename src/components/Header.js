@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 // import { fadeIn } from "variants.js";
 
 const Header = () => {
-  const { toggleMenu } = useModal();
+  const { toggleMenu, toggleLoginModal } = useModal();
   const menuOptions = [
     {
       name: "Veer solutions",
@@ -101,10 +101,13 @@ const Header = () => {
             className={`font-qanelas_m text-14 cursor-pointer ${
               lightTheme ? "text-black" : ""
             }`}
+            onClick={() => toggleLoginModal()}
           >
             Log in
           </p>
-          <Button name={"Get Started"} theme={"primary"} />
+          <a href="https://app.veer.ng/auth/signup">
+            <Button name={"Get Started"} theme={"primary"} />
+          </a>
         </div>
         <div className="lg:hidden">
           {lightTheme ? (

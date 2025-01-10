@@ -1,5 +1,6 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
+import LoginModal from "components/LoginModal";
 import MobileMenu from "components/MobileMenu";
 import ScheduleDemo from "components/ScheduleDemo";
 import Spinner from "components/Spinner";
@@ -19,6 +20,7 @@ const ModalContext = createContext();
 export const useModal = () => useContext(ModalContext);
 
 export default function MainLayout() {
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -27,6 +29,13 @@ export default function MainLayout() {
   };
   const closeModal = () => {
     setIsModalOpen(false);
+  };
+
+  const toggleLoginModal = () => {
+    setIsLoginModalOpen((prev) => !prev);
+  };
+  const closeLoginModal = () => {
+    setIsLoginModalOpen(false);
   };
 
   const toggleMenu = () => {
@@ -47,38 +56,46 @@ export default function MainLayout() {
     };
   }, [isModalOpen, isMenuOpen]);
 
-  const menuVariants = {
-    open: {
-      x: 0,
-      transition: {
-        stiffness: 20,
-        damping: 15,
-      },
-    },
-    close: {
-      x: "-100%",
-      transition: {
-        stiffness: 20,
-        damping: 15,
-      },
-    },
-  };
+  // const menuVariants = {
+  //   open: {
+  //     x: 0,
+  //     transition: {
+  //       stiffness: 20,
+  //       damping: 15,
+  //     },
+  //   },
+  //   close: {
+  //     x: "-100%",
+  //     transition: {
+  //       stiffness: 20,
+  //       damping: 15,
+  //     },
+  //   },
+  // };
 
-  const style = {
-    animate: { y: 0, transition: { type: "spring", duration: 1 } },
-    initial: { y: -200 },
-    exit: { y: -200, transition: { type: "spring", duration: 1 } },
-  };
+  // const style = {
+  //   animate: { y: 0, transition: { type: "spring", duration: 1 } },
+  //   initial: { y: -200 },
+  //   exit: { y: -200, transition: { type: "spring", duration: 1 } },
+  // };
 
   return (
     <ModalContext.Provider
-      value={{ toggleModal, closeModal, toggleMenu, closeMenu }}
+      value={{
+        toggleModal,
+        closeModal,
+        toggleMenu,
+        closeMenu,
+        toggleLoginModal,
+        closeLoginModal,
+      }}
     >
       <div className="relative bg-[#12131A] h-[100vh]">
         <Suspense fallback={<Spinner />}>
           <Header />
           <Outlet />
           <Footer />
+          {isLoginModalOpen && <LoginModal />}
           {isModalOpen && <ScheduleDemo />}
           {isMenuOpen && <MobileMenu />}
           {/* <AnimatePresence>

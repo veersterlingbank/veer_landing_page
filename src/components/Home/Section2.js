@@ -1,4 +1,3 @@
-import TopBg from "assets/images/section-2-bg.webp";
 import { ReactComponent as Service1 } from "assets/icons/services-icon-1.svg";
 import { ReactComponent as Service2 } from "assets/icons/services-icon-2.svg";
 import { ReactComponent as Service3 } from "assets/icons/services-icon-3.svg";

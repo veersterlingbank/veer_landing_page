@@ -3,14 +3,11 @@ import { fadeIn } from "variants.js";
 import Button from "./Inputs/Button";
 import { useNavigate } from "react-router-dom";
 import ErrorImg from "assets/images/404-img.webp";
-import Footer from "components/Footer";
-import Header from "components/Header";
 
 const ErrorPage = () => {
   const navigate = useNavigate()
   return (
     <div className="bg-[#040F12] min-h-[100vh]">
-      {/* <Header /> */}
       <div className="max-w-[1350px] md:w-[90%] 2xl:w-full m-auto pt-[5rem] xl:pt-[13rem] md:flex justify-between">
         <div className="md:pt-[3rem] mx-auto w-[90%] md:w-full mb-[4rem] md:m-0 basis-[45%]">
           <motion.h1
@@ -57,7 +54,6 @@ const ErrorPage = () => {
           />
         </div>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };

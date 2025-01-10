@@ -34,41 +34,41 @@ const Section6 = () => {
     },
   };
 
-  const stepsTop = [
-    {
-      step: "STEP ONE",
-      title: "Sign up as a company",
-      image: Step1,
-    },
-    {
-      step: "STEP TWO",
-      title: "Drivers take lessons and quiz",
-      image: Step2,
-    },
-    {
-      step: "STEP THREE",
-      title: "Drivers take simulator exercise",
-      image: Step3,
-    },
-  ];
+  // const stepsTop = [
+  //   {
+  //     step: "STEP ONE",
+  //     title: "Sign up as a company",
+  //     image: Step1,
+  //   },
+  //   {
+  //     step: "STEP TWO",
+  //     title: "Drivers take lessons and quiz",
+  //     image: Step2,
+  //   },
+  //   {
+  //     step: "STEP THREE",
+  //     title: "Drivers take simulator exercise",
+  //     image: Step3,
+  //   },
+  // ];
 
-  const stepsBottom = [
-    {
-      step: "STEP FOUR",
-      title: "Drivers earn certificates",
-      image: Step4,
-    },
-    {
-      step: "STEP FIVE",
-      title: "Track real-time driver behaviour with our telemetry solution",
-      image: Step5,
-    },
-    {
-      step: "STEP SIX",
-      title: "Appraise driver performance all year long",
-      image: Step6,
-    },
-  ];
+  // const stepsBottom = [
+  //   {
+  //     step: "STEP FOUR",
+  //     title: "Drivers earn certificates",
+  //     image: Step4,
+  //   },
+  //   {
+  //     step: "STEP FIVE",
+  //     title: "Track real-time driver behaviour with our telemetry solution",
+  //     image: Step5,
+  //   },
+  //   {
+  //     step: "STEP SIX",
+  //     title: "Appraise driver performance all year long",
+  //     image: Step6,
+  //   },
+  // ];
 
   const stepsMobile = [
     {

@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import React, { useMemo, useState } from "react";
+import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -25,7 +25,7 @@ export const DefaultDatepicker = ({
   value,
   timeIntervals,
 }) => {
-  const [labelStyles, setLabelStyles] = useState(false);
+  // const [labelStyles, setLabelStyles] = useState(false);
 
   const years = useMemo(() => {
     // let currentYear = new Date().getFullYear();
@@ -128,12 +128,12 @@ export const DefaultDatepicker = ({
         timeCaption={timeCaption}
         autoComplete="off"
         placeholder={`test-${name}`}
-        onBlur={() => {
-          setLabelStyles(false);
-        }}
-        onFocus={() => {
-          setLabelStyles(true);
-        }}
+        // onBlur={() => {
+        //   setLabelStyles(false);
+        // }}
+        // onFocus={() => {
+        //   setLabelStyles(true);
+        // }}
         data-testid={`test-${name}`}
         aria-labelledby={name}
         name={name}
