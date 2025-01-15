@@ -17,36 +17,36 @@ const Section3 = () => {
       icon: <Solution1 />,
       title: "Driver Proficiency Test",
       content1:
-        "Combine immersive simulator training with real-world inroad evaluations for a comprehensive driver assessment.",
+        "Veer uses multiple-choice questions to assess drivers theoretical knowledge on road signs, traffic laws, vehicle operation, and safety protocols, offering standardized testing, real-time feedback, customizable content, performance tracking, and integration with the LMS to ensure comprehensive driver training, compliance, and certification for enhanced safety and performance.",
       content2:
-        "Our dual approach ensures drivers gain practical experience while refining critical skills, delivering a thorough evaluation that promotes safer, more confident driving on every journey.",
+        "",
       image: Value1,
     },
     {
       icon: <Solution2 />,
       title: "Learning Management System",
       content1:
-        "Our comprehensive driver development suite includes digital training with Veer LMS, immersive simulator sessions, and in-depth evaluations. Equip drivers with the skills and insights needed for safer, more efficient journeys.",
+        "With our LMS, learners can train at their own pace and on their own time, making it convenient for those with tight schedules or those who prefer to learn in the comfort of their own home.",
       content2:
-        "This includes digital driver training using Veer LMS, Simulator driver training and evaluation",
+        "VEER’s curriculum is designed to cover all aspects of driver education, including road safety, defensive driving techniques, and vehicle maintenance. The holistic approach ensures that drivers are not only skilled but also knowledgeable about road rules and regulations.",
       image: Value2,
     },
     {
       icon: <Solution3 />,
       title: "Veer simulators",
       content1:
-        "This includes Digital driver training using Veer LMS, Simulator driver training, inroad Driver behaviour Tracking, Evaluation & Analytics.",
+        "VEER uses advanced driving simulators that provide a risk-free environment for learners. This allows drivers to gain hands-on experience without the dangers associated with real-world driving, especially in high-traffic or hazardous conditions. ",
       content2:
-        "Our all-in-one solution combines digital training on Veer LMS, hands-on simulator sessions, inroad driver behavior tracking, and comprehensive evaluation analytics. Enhance driver skills, safety, and performance with real-time insights and continuous improvement tools.",
+        "The simulators replicate real-world driving scenarios, including various weather conditions, traffic situations, and emergency responses, helping drivers develop the skills needed to handle any situation on the road.",
       image: Value3,
     },
     {
       icon: <Solution4 />,
       title: "Telemetry solutions",
       content1:
-        "This includes Digital driver training using Veer LMS, Simulator driver training, inroad Driver behaviour Tracking, Evaluation & Analytics.",
+        "VEER provides advanced tools for tracking and analyzing driver behavior and performance in real-time. This feature allows companies to monitor driver progress, identify areas for improvement, and make data-driven decisions to enhance safety and efficiency.",
       content2:
-        "Our all-in-one solution combines digital training on Veer LMS, hands-on simulator sessions, inroad driver behavior tracking, and comprehensive evaluation analytics. Enhance driver skills, safety, and performance with real-time insights and continuous improvement tools.",
+        "Unlike traditional training methods, VEER's continuous tracking ensures that drivers are consistently evaluated and supported throughout their careers, leading to better long-term performance and reduced accident rates.",
       image: Value4,
     },
   ];

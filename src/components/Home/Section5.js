@@ -38,11 +38,9 @@ const Section5 = () => {
             >
               <div></div>
               <p className="basis-[36%]">
-                We Solve the biggest challenges in fleet management. Everything
-                you need to train, track, and certify your drivers— all in one
-                platform. Revolutionize driver training with cutting-edge
-                simulators, real-time tracking, and automated
-                certification—driving safer, smarter, and compliant fleets.
+                We Solve the biggest challenges in Driver Training, with our
+                cutting-edge simulators, real-time behavior tracking, and
+                flexible trainings.
               </p>
             </motion.div>
           </div>
