@@ -5,6 +5,7 @@ import { useModal } from "layouts/MainLayout";
 import Button from "./Inputs/Button";
 
 const MobileMenu = () => {
+  const { toggleLoginModal } = useModal();
   const navigate = useNavigate();
   const { closeMenu } = useModal();
   const menuOptions = [
@@ -59,8 +60,11 @@ const MobileMenu = () => {
           name={"Log in"}
           theme={"transparent"}
           className={"border-[#191C24] text-[#191C24] w-full"}
+          onClick={() => toggleLoginModal()}
         />
-        <Button name={"Get Started"} theme={"primary"} className={"w-full"} />
+        <a href="https://app.veer.ng/auth/signup">
+          <Button name={"Get Started"} theme={"primary"} className={"w-full"} />
+        </a>
       </div>
     </div>
   );

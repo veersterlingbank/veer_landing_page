@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import SEO from "components/SEO";
 import { ReactComponent as ArrowUp } from "assets/icons/faq-arrow-up.svg";
 import { ReactComponent as ArrowDown } from "assets/icons/faq-arrow-down.svg";
 
@@ -81,51 +82,59 @@ const FAQ = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-[#FFEDED] to-[#FFFFFF]">
-      <div className="max-w-[1350px] w-[90%] xl:w-[55%] m-auto pt-[10rem] xl:pt-[13rem]">
-        <div className="pb-[5rem]">
-          <motion.h1
-            variants={fadeIn("right", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.7 }}
-            className="font-qanelas_b text-[36px] lg:text-[56px] leading-[43px] lg:leading-[69px] text-[#0D0E13]"
-          >
-            Got questions? <br />
-            We’ve got answers too
-          </motion.h1>
-          <div className="mt-[4rem]">
-            <AnimatePresence>
-              {faqs.map((faq, index) => (
-                <motion.div
-                  variants={fadeIn("right", 0.2 + index * 0.1)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  viewport={{ once: true, amount: 0.7 }}
-                  key={index}
-                  className="transition-all border-b-2 border-gray-200 p-4 mb-2 rounded-[10px] bg-white"
-                >
-                  <button
-                    onClick={() => toggleFAQ(index)}
-                    className="w-full flex justify-between text-left items-center lg:text-[20px] font-qanelas_b text-[#0D0E13] hover:text-gray-900 focus:outline-none"
+    <>
+      <SEO
+        title="FAQ - Veer"
+        description="VEER is an innovative digital driving solution dedicated to improving road safety through state-of-the-art technology."
+        name="Veer - World-Class Driver Training Platform"
+        type="website"
+      />
+      <div className="bg-gradient-to-b from-[#FFEDED] to-[#FFFFFF]">
+        <div className="max-w-[1350px] w-[90%] xl:w-[55%] m-auto pt-[10rem] xl:pt-[13rem]">
+          <div className="pb-[5rem]">
+            <motion.h1
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.7 }}
+              className="font-qanelas_b text-[36px] lg:text-[56px] leading-[43px] lg:leading-[69px] text-[#0D0E13]"
+            >
+              Got Questions? <br />
+              We’ve Got Answers Too
+            </motion.h1>
+            <div className="mt-[4rem]">
+              <AnimatePresence>
+                {faqs.map((faq, index) => (
+                  <motion.div
+                    variants={fadeIn("right", 0.2 + index * 0.1)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true, amount: 0.7 }}
+                    key={index}
+                    className="transition-all border-b-2 border-gray-200 p-4 mb-2 rounded-[10px] bg-white"
                   >
-                    {faq.question}
-                    <span className="">
-                      {openIndex === index ? <ArrowUp /> : <ArrowDown />}
-                    </span>
-                  </button>
-                  {openIndex === index && (
-                    <p className="mt-3 text-black w-[90%] lg:w-[70%]">
-                      {faq.answer}
-                    </p>
-                  )}
-                </motion.div>
-              ))}
-            </AnimatePresence>
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full flex justify-between text-left items-center lg:text-[20px] font-qanelas_b text-[#0D0E13] hover:text-gray-900 focus:outline-none"
+                    >
+                      {faq.question}
+                      <span className="">
+                        {openIndex === index ? <ArrowUp /> : <ArrowDown />}
+                      </span>
+                    </button>
+                    {openIndex === index && (
+                      <p className="mt-3 text-black w-[90%] lg:w-[70%]">
+                        {faq.answer}
+                      </p>
+                    )}
+                  </motion.div>
+                ))}
+              </AnimatePresence>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

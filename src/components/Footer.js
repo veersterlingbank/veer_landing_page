@@ -111,7 +111,7 @@ const Footer = () => {
             className="basis-[47%]"
           >
             <h3 className="text-[45px] 2xl:text-[56px] font-qanelas_b leading-[55px] 2xl:leading-[69px] mb-8">
-              Do you need more information?
+              Do You Need More Information?
             </h3>
           </motion.div>
           <motion.div

@@ -27,7 +27,7 @@ const LoginModal = () => {
     <div className="bg-[#00000046] h-[100vh] w-[100vw] fixed top-0 left-0 z-20">
       <div className="py-[3rem] xl:py-[5rem] px-[3rem] xl:px-[8rem] h-[100vh] w-full md:w-[70%] bg-white absolute right-0">
         <div className="lg:flex lg:space-x-[4rem]">
-          <div className="">
+          <div className="mb-10 lg:mb-0">
             <Button
               children={
                 <div className="flex space-x-4">
@@ -48,7 +48,7 @@ const LoginModal = () => {
             className="h-[80vh] lg:h-[85vh] pb-[6rem] overflow-y-auto w-full lg:w-[60%]"
           >
             <h3 className="text-32 font-qanelas_b w-full text-[#0D0E13] leading-[40px] mb-2">
-              Continue to Veer
+              Continue To Veer
             </h3>
             <p className="font-qanelas_m text-[#191C24] mb-8">
               Select your preferred option below

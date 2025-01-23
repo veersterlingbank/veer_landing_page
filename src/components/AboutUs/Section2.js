@@ -10,6 +10,7 @@ import Value4 from "assets/images/about-sec-2-d.webp";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
+import { capitalizeFirstLetter } from "utils/functions";
 
 const Section2 = () => {
   const values = [
@@ -31,7 +32,7 @@ const Section2 = () => {
     },
     {
       icon: <Service3 />,
-      title: "Integrity and Transparency",
+      title: "Integrity And Transparency",
       content1:
         "We operate with honesty and openness. Our feedback processes are transparent, and we hold ourselves accountable to our mission and our drivers.",
       content2:
@@ -68,7 +69,9 @@ const Section2 = () => {
         >
           <p className="text-light_brand_primary font-qanelas_m">OUR VALUES</p>
           <h3 className="font-qanelas_b text-[36px] leading-[44px] mt-[1rem] mb-[1.5rem] text-[#222222]">
-            Powering safer journeys for commercial drivers
+            {capitalizeFirstLetter(
+              "Powering safer journeys for commercial drivers"
+            )}
           </h3>
         </motion.div>
         <motion.div

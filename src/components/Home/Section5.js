@@ -27,7 +27,7 @@ const Section5 = () => {
               className="text-[56px] leading-[69px] font-qanelas_b"
             >
               Safer Roads Powered <br />
-              by Technology
+              By Technology
             </motion.h3>
             <motion.div
               variants={fadeIn("right", 0.2)}

@@ -12,6 +12,7 @@ import "react-multi-carousel/lib/styles.css";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
+import { capitalizeFirstLetter } from "utils/functions";
 
 const Section6 = () => {
   const responsive = {
@@ -256,7 +257,7 @@ const Section6 = () => {
                     {item.step}
                   </p>
                   <h5 className="font-qanelas_b text-[18px] text-[#222222] mt-[1rem] mb-[1rem]">
-                    {item.title}
+                    {capitalizeFirstLetter(item.title)}
                   </h5>
                   <img src={item.image} alt={item.title} />
                 </div>
