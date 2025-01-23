@@ -167,7 +167,7 @@ const Section6 = () => {
         </div>
         <div className="md:basis-[47%] xl:basis-[30%]">
           <p className="text-[16px] font-qanelas_m text-[#191C24] mb-8">
-            We Solve the biggest challenges in drivers training. Everything you
+            We solve the biggest challenges in drivers training. Everything you
             need to train, track, and certify your drivers— all in one platform.
           </p>
         </div>

@@ -128,7 +128,7 @@ const ScheduleDemo = () => {
             <div className="h-[80vh] lg:h-[85vh] mt-[3rem] pb-[6rem] overflow-y-auto">
               <h3 className="text-32 font-qanelas_b w-full lg:w-[70%] text-[#0D0E13] leading-[40px] mb-2">
                 {capitalizeFirstLetter(
-                  "Let us show you the future of drivers management."
+                  "Let us show you the future of driver Training."
                 )}
               </h3>
               <p className="font-qanelas_m text-[#191C24] mb-8">
@@ -165,7 +165,7 @@ const ScheduleDemo = () => {
                 <div className="md:flex justify-between ">
                   <div className="basis-[47%]">
                     <Input
-                      label="Email address"
+                      label="Email Address"
                       type="text"
                       id="emailAddress"
                       name="emailAddress"
@@ -177,7 +177,7 @@ const ScheduleDemo = () => {
                   </div>
                   <div className="basis-[47%]">
                     <Input
-                      label="Phone number"
+                      label="Phone Number"
                       type="number"
                       id="phoneNumber"
                       name="phoneNumber"
@@ -190,7 +190,7 @@ const ScheduleDemo = () => {
                 </div>
                 <div className="">
                   <Input
-                    label="Company name"
+                    label="Company Name"
                     type="text"
                     id="companyName"
                     name="companyName"
@@ -207,7 +207,7 @@ const ScheduleDemo = () => {
                         htmlFor="companySize"
                         className="text-black mb-2 font-qanelas_m pt-2 cursor-text"
                       >
-                        Company size
+                        Number Of Drivers
                       </label>
                       <select
                         id="companySize"
@@ -218,7 +218,7 @@ const ScheduleDemo = () => {
                         className="h-[50px] px-4 mt-2 text-brand_secondary text-14 w-full outline-0 border font-qanelas_r hide_tap rounded-[5px] border-border_stroke_1 focus:border-brand_secondary focus:border"
                       >
                         <option disabled value="">
-                          Select Company Size
+                          Select Number Of Drivers
                         </option>
                         <option value="1-10">1-10</option>
                         <option value="11-50">11-50</option>
@@ -257,7 +257,7 @@ const ScheduleDemo = () => {
                 <div className="md:flex justify-between ">
                   <div className="basis-[47%]">
                     <DefaultDatepicker
-                      label="Preferred demo date"
+                      label="Preferred Demo Date"
                       containerVariant=""
                       minDate={new Date()}
                       maxDate={new Date("2030-12-31")}
@@ -271,7 +271,7 @@ const ScheduleDemo = () => {
                   </div>
                   <div className="basis-[47%]">
                     <DefaultDatepicker
-                      label="Preferred demo time"
+                      label="Preferred Demo Time"
                       showTimeSelectOnly={true}
                       dateFormat="h:mm aa"
                       showTimeSelect={true}
@@ -288,7 +288,7 @@ const ScheduleDemo = () => {
                 </div>
                 <div className="">
                   <TextArea
-                    label="Additional note (optional)"
+                    label="Additional Note (Optional)"
                     placeholder="Start writing here"
                     id="message"
                     name="message"
