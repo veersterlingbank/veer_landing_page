@@ -27,7 +27,7 @@ const Section2 = () => {
               className="text-[56px] leading-[69px] font-qanelas_b"
             >
               Shaping Better <br />
-              Drivers for a Safer <br />
+              Drivers For A Safer <br />
               Tomorrow
             </motion.h3>
             <motion.div
@@ -69,9 +69,12 @@ const Section2 = () => {
               viewport={{ once: true, amount: 0.7 }}
               className="text-[32px] leading-[39px] font-qanelas_b"
             >
-              Transforming risk <br />
+              {/* Transforming risk <br />
               into remarkable <br />
-              performance
+              performance */}
+              Shaping Better <br />
+              Drivers For A Safer <br />
+              Tomorrow
             </motion.h3>
             <motion.div
               variants={fadeIn("right", 0.2)}

@@ -22,7 +22,7 @@ const Section1 = () => {
             ]}
             wrapper="h1"
             speed={60}
-            className="font-qanelas_b text-[36px] lg:text-[56px] leading-[44px] lg:leading-[69px] text-white"
+            className="font-qanelas_b text-[34px] lg:text-[56px] leading-[44px] lg:leading-[69px] text-white"
             // style={{
             //   fontFamily: "Qanelas",
             //   fontSize: "56px",

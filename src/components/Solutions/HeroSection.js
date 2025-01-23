@@ -6,6 +6,7 @@ import { useModal } from "layouts/MainLayout";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
+import { capitalizeFirstLetter } from "utils/functions";
 
 const HeroSection = () => {
   const { toggleModal } = useModal();
@@ -20,7 +21,9 @@ const HeroSection = () => {
             viewport={{ once: true, amount: 0.7 }}
             className="font-qanelas_b text-[36px] md:text-[46px] lg:text-[56px] leading-[44px] md:leading-[59px] lg:leading-[69px] text-[#0D0E13]"
           >
-            Revolutionizing driver training for safer roads
+            {capitalizeFirstLetter(
+              "Revolutionizing driver training for safer roads"
+            )}
           </motion.h1>
           <motion.p
             variants={fadeIn("right", 0.3)}

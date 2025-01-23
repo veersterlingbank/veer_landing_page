@@ -10,6 +10,7 @@ import { DefaultDatepicker } from "./Inputs/DefaultDatepicker";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 import SuccessModal from "./SuccessModal";
+import { capitalizeFirstLetter } from "utils/functions";
 
 const ScheduleDemo = () => {
   const [formData, setFormData] = useState({
@@ -126,7 +127,9 @@ const ScheduleDemo = () => {
           ) : (
             <div className="h-[80vh] lg:h-[85vh] mt-[3rem] pb-[6rem] overflow-y-auto">
               <h3 className="text-32 font-qanelas_b w-full lg:w-[70%] text-[#0D0E13] leading-[40px] mb-2">
-                Let us show you the future of drivers management.
+                {capitalizeFirstLetter(
+                  "Let us show you the future of drivers management."
+                )}
               </h3>
               <p className="font-qanelas_m text-[#191C24] mb-8">
                 Schedule your personalized demo today.

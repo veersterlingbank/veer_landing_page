@@ -4,6 +4,7 @@ import Section3 from "components/Home/Section3";
 import Section4 from "components/Home/Section4";
 import Section5 from "components/Home/Section5";
 import Section6 from "components/Home/Section6";
+import SEO from "components/SEO";
 import { useEffect } from "react";
 
 const Home = () => {
@@ -12,6 +13,12 @@ const Home = () => {
   }, []);
   return (
     <>
+      <SEO
+        title="Veer - World-Class Driver Training Platform"
+        description="Revolutionizing driver training through digital learning solutions, cutting-edge simulators, real-time driver behaviour tracking, and automated driver certifications to create safer roads for all."
+        name="Veer - World-Class Driver Training Platform"
+        type="website"
+      />
       <HeroSection />
       <Section2 />
       <Section3 />

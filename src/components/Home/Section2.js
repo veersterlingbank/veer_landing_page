@@ -7,13 +7,14 @@ import Button from "components/Inputs/Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 import { useNavigate } from "react-router-dom";
+import { capitalizeFirstLetter } from "utils/functions";
 
 const Section2 = () => {
   const navigate = useNavigate();
   const services = [
     {
       icon: <Service1 />,
-      title: "LMS for Driver Training",
+      title: "Learning Management System",
       content:
         "Personalized learning paths tailored to each driver’s skill level and goals for impactful, targeted training.",
     },
@@ -21,13 +22,13 @@ const Section2 = () => {
       icon: <Service2 />,
       title: "Driver proficiency test",
       content:
-        "Experience real-world driving conditions without the risk—urban, rural, and extreme weather environments.",
+        "Veer uses multiple-choice questions to assess drivers theoretical knowledge on road signs, traffic laws, vehicle operation, and safety protocols, offering standardized testing, and real-time feedback on every driver.",
     },
     {
       icon: <Service3 />,
       title: "Veer Simulators",
       content:
-        "VEER minimizes the carbon footprint of driver training by using eco-friendly simulators in place of traditional in-vehicle lessons",
+        "VEER uses advanced driving simulators that provide a risk-free environment for learners, allowing drivers to gain hands-on experience without the dangers associated with real-world driving.",
     },
     {
       icon: <Service4 />,
@@ -89,10 +90,12 @@ const Section2 = () => {
             WHAT WE OFFER
           </p>
           <h3 className="font-qanelas_b text-[30px] leading-[38px] xl:text-[36px] xl:leading-[44px] mt-[1rem] mb-[1.5rem] text-[#222222]">
-            A Comprehensive Suite for drivers training.
+            {capitalizeFirstLetter(
+              "A Comprehensive Suite for drivers training."
+            )}
           </h3>
           <p className="text-[16px] text-[#222222] mb-8">
-            We Solve the biggest challenges in drivers training. Everything you
+            We solve the biggest challenges in drivers training. Everything you
             need to train, track, and certify your drivers— all in one platform.
           </p>
           <Button
@@ -116,7 +119,7 @@ const Section2 = () => {
             >
               {item.icon}
               <h5 className="font-qanelas_b text-[24px] text-[#222222] mt-[1.5rem] mb-[0.5rem]">
-                {item.title}
+                {capitalizeFirstLetter(item.title)}
               </h5>
               <p className="font-qanelas_m text-[#191C24]">{item.content}</p>
             </motion.div>

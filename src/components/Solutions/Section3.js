@@ -9,6 +9,7 @@ import Value3 from "assets/images/solution-sec-2-c.webp";
 import Value4 from "assets/images/solution-sec-2-d.webp";
 
 import { motion } from "framer-motion";
+import { capitalizeFirstLetter } from "utils/functions";
 import { fadeIn } from "variants.js";
 
 const Section3 = () => {
@@ -100,7 +101,7 @@ const Section3 = () => {
                   <div>{item.icon}</div>
                   <div>
                     <h5 className="font-qanelas_b text-[24px] text-[#222222] mt-[1rem] lg:mt-0 mb-[1rem]">
-                      {item.title}
+                      {capitalizeFirstLetter(item.title)}
                     </h5>
                     <p className="text-[#191C24] font-qanelas_m">
                       {item.content1}

@@ -51,10 +51,13 @@ export default function MainLayout() {
     } else {
       document.body.style.overflow = "auto";
     }
+    if (isLoginModalOpen) {
+      setIsMenuOpen(false);
+    }
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [isModalOpen, isMenuOpen]);
+  }, [isModalOpen, isMenuOpen, isLoginModalOpen]);
 
   // const menuVariants = {
   //   open: {
