@@ -186,7 +186,7 @@ const ContactUs = () => {
                     <div className="lg:flex justify-between ">
                       <div className="basis-[47%]">
                         <Input
-                          label="Email address"
+                          label="Email Address"
                           type="text"
                           id="emailAddress"
                           name="emailAddress"
@@ -198,7 +198,7 @@ const ContactUs = () => {
                       </div>
                       <div className="basis-[47%]">
                         <Input
-                          label="Phone number"
+                          label="Phone Number"
                           type="number"
                           id="phoneNumber"
                           name="phoneNumber"
@@ -211,7 +211,7 @@ const ContactUs = () => {
                     </div>
                     <div className="">
                       <Input
-                        label="Company name"
+                        label="Company Name"
                         type="text"
                         id="companyName"
                         name="companyName"
@@ -223,7 +223,7 @@ const ContactUs = () => {
                     </div>
                     <div className="">
                       <TextArea
-                        label={"Your message"}
+                        label={"Your Message"}
                         placeholder="Start writing here"
                         id="message"
                         name="message"
